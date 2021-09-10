@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from Pilotari import Pilotari
 
 class Maila(object):
@@ -42,6 +43,13 @@ class Maila(object):
                     players[team][p].save_player(self.players_file)
                 except IndexError:
                     pass
+    
+    def visualise(self, vis_type = "classement"):
+        """Display information about club players in various ways (plots and tables)."""
+        if vis_type == "violin":
+            self.plot_violin()
+        elif vis_type == "classement":
+            self.ranking_table()
     
     def reinitialise(self, verbose = False):
         """Reinitialise all player PAMs (when updating the elo computations)."""
@@ -142,3 +150,23 @@ class Maila(object):
         PAMs_update = [k*(resT1-predT1),
                        k*(predT1-resT1)]
         return PAMs_update
+    
+    def plot_violin(self):
+        """Plot the distribution of player PAMs by club category."""
+        categories = ["2B", "2A", "1B", "1A"]
+        for i, cat in enumerate(categories):
+            plt.violinplot(self.players[self.players.Category == cat]["PAM_duo"],
+                           positions = [i], showextrema=False)
+            plt.boxplot(self.players[self.players.Category == cat]["PAM_duo"],
+                        positions = [i])
+        plt.xticks(ticks=list(range(len(categories))), labels=categories)
+        plt.show()
+    
+    def ranking_table(self):
+        """Print a ranking table of the players."""
+        sorted_players = self.players.sort_values(by = ["PAM_duo"],
+                                                  ascending = False,
+                                                  ignore_index=True)
+        for i, player in sorted_players.iterrows():
+            print(f"{i+1}. {player.Name} ({player.Category}), PAM : {int(player.PAM_duo)}.")
+        
