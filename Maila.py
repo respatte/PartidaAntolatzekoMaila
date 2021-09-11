@@ -167,6 +167,12 @@ class Maila(object):
         sorted_players = self.players.sort_values(by = ["PAM_duo"],
                                                   ascending = False,
                                                   ignore_index=True)
-        for i, player in sorted_players.iterrows():
-            print(f"{i+1}. {player.Name} ({player.Category}), PAM : {int(player.PAM_duo)}.")
+        sorted_players = sorted_players.astype({"PAM_duo":int})
+        sorted_players = sorted_players[["Name", "Category", "PAM_duo"]]
+        sorted_players = sorted_players.rename(columns = {"Name" : "Joueur",
+                                                          "Category" : "Série",
+                                                          "PAM_duo" : "PAM"})
+        sorted_players.index += 1
+        sorted_players.index.name = "Classement"
+        print(sorted_players.to_markdown())
         
