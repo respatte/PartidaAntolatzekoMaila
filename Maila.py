@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from Pilotari import Pilotari
 
@@ -15,7 +16,7 @@ class Maila(object):
     def add_game(self):
         """Add a game to the database and update player PAMs."""
         # Gather game information
-        (mode, game_date, players, total_score, sets) = self.gather_game_info()
+        (mode, game_date, players, scores, sets) = self.gather_game_info()
         # Save game information to database
         if mode == "duo":
             game_info = [players[team][p].name for team in players
@@ -23,13 +24,13 @@ class Maila(object):
         else:
             tmp = [players[team][0].name for team in players]
             game_info = [tmp[0], None, tmp[1], None]
-        game_info.append(f"{total_score[0]}-{total_score[1]}")
+        game_info.append(self.scores_to_str(scores))
         game_info.append(sets)
         game_info.append(game_date)
         self.games.loc[len(self.games.index)] = game_info
         self.games.to_csv(self.games_file, index = False)
         # Update player PAMs based on game
-        PAMs_update = self.update_PAM(mode, players, total_score)
+        PAMs_update = self.update_PAM(mode, players, scores, sets)
         if mode == "duo":
             for p in range(2):
                 players["Team 1"][p].pam_duo += PAMs_update[0]
@@ -69,8 +70,9 @@ class Maila(object):
                                    Pilotari(game.T1P2, self.players_file)],
                        "Team 2" : [Pilotari(game.T2P1, self.players_file),
                                    Pilotari(game.T2P2, self.players_file)]}
-            total_score = [int(points) for points in game.Score.split("-")]
-            PAMs_update = self.update_PAM(mode, players, total_score)
+            scores = self.str_to_score(game.Score)
+            sets = int(game.Sets)
+            PAMs_update = self.update_PAM(mode, players, scores, sets)
             if verbose:
                 saved_updates.append(PAMs_update)
             if mode == "duo":
@@ -112,21 +114,25 @@ class Maila(object):
         # Get score and number of sets
         score_approved = False
         while not score_approved:
-            total_score = [0, 0]
             scores = []
             sets = int(input("Nombre de sets joués : "))
             for s in range(sets):
                 tmp = input(f"Score set {s+1} (pour l'équipe 1, format N1-N2) : ").split("-")
                 set_score = [int(points) for points in tmp]
                 scores.append(set_score)
-                total_score[0] += set_score[0]
-                total_score[1] += set_score[1]
             check = input(f"Score entrés : {scores}. Valider ? (oui/non) ")
             score_approved = check == "oui"
         # Return players list, total scores, and number of sets
-        return (mode, game_date, players, total_score, sets)
+        return (mode, game_date, players, scores, sets)
     
-    def update_PAM(self, mode, players, total_score):
+    def scores_to_str(self, scores):
+        return " ".join([f"{score[0]}-{score[1]}" for score in scores])
+    
+    def str_to_score(self, str_scores):
+        return [[int(points) for points in score.split("-")]
+                for score in str_scores.split(" ")]
+    
+    def update_PAM(self, mode, players, scores, sets):
         """Update PAMs for all players for a given game."""
         # Setup general ELO rating parameters
         c = 100
@@ -143,9 +149,12 @@ class Maila(object):
         # Compute each team 1's result and prediction according to PAMs
         # Team 2's result and prediction is 1 - team 1's result and prediction
         predT1 = 1 / (1 + c**((PAMs[1] - PAMs[0])/d))
-        resT1 = int(total_score[0] > total_score[1])
+        resT1 = sum([score[0]>score[1] for score in scores]) > sets/2
         # Compute match importance as total score difference
-        k = 20 * (3 - 2*min(total_score)/max(total_score))
+        total_score = np.sum(scores, axis = 0)
+        win_score = 1-resT1 # Index for winner in total_score
+        ## If looser scored more points, code ratio as 1
+        k = 20 * (3 - 2*min(total_score)/total_score[win_score])
         # Get new PAMs
         PAMs_update = [k*(resT1-predT1),
                        k*(predT1-resT1)]
