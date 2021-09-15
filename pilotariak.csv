@@ -1,7 +1,7 @@
 Name,Category,PAM_solo,PAM_duo
 Arthur Capelier-Mourguy,1B,1200,1200.0
 Bertrand Lebel,2A,1000,1000.0
-Michel Lesueur,1B,1200,1200.0
+Michel Lesueur,1B,1200,1181.139256433319
 Guillaume de Lamaze,2A,1000,1000.0
 Baptiste Lagaillardie,1B,1200,1200.0
 Olivier de Bernardi,2A,1000,1000.0
@@ -11,15 +11,15 @@ Pierre Meglin,2A,1000,1000.0
 Mathieu Leizagoyen,1B,1200,1200.0
 Vincent Pasquesoone,1B,1200,1200.0
 Clément Bonnichon,2A,1000,1000.0
-Thibault Martre,1A,1400,1400.0
-Georges Bachette-Peyrade,1A,1400,1400.0
-Charles Coustille,1B,1200,1200.0
+Thibault Martre,1A,1400,1402.1841188486549
+Georges Bachette-Peyrade,1A,1400,1385.8597082991462
+Charles Coustille,1B,1200,1234.0436172545294
 Ramire Nunez,1A,1400,1400.0
-Jean-Luc Sallaberry,1A,1400,1400.0
-Evhan Dijoux,1A,1400,1400.0
-Côme Saint-Pierre,1A,1400,1400.0
+Jean-Luc Sallaberry,1A,1400,1385.8597082991462
+Evhan Dijoux,1A,1400,1402.7828736878482
+Côme Saint-Pierre,1A,1400,1387.6
 Charles Bachette-Peyrade,1A,1400,1400.0
-Thibaud Babled,1B,1200,1200.0
+Thibaud Babled,1B,1200,1190.8267008356493
 Olivier Matteoli,2B,700,700.0
 Dimitri Girardetti,2B,700,700.0
 Igor de Maack,2B,700,700.0
@@ -29,7 +29,7 @@ Jean-Philippe Louis,2B,700,700.0
 Axel Bonneville,2B,700,700.0
 Laurent Fiat,2B,700,700.0
 Victor Lassalle,2A,1000,1000.0
-Hugues Saint-Pierre,1A,1400,1400.0
+Hugues Saint-Pierre,1A,1400,1412.4
 Mathieu Olhagaray,1B,1200,1200.0
 Loïc Harang,1B,1200,1200.0
 Thomas Damitio,1B,1200,1200.0
@@ -40,7 +40,8 @@ Jean-Dominique Daragnes,2B,700,700.0
 Pierre Privat,2A,1000,1000.0
 Emmanuel Poidevin,2A,1000,1000.0
 Peio Arcangues,2A,1000,1000.0
-Nicolas Ossard,1A,1400,1400.0
-Peio Mendiarat,1A,1400,1400.0
+Nicolas Ossard,1A,1400,1420.5307171773563
+Peio Mendiarat,1A,1400,1409.1732991643507
 Alois de Bouville,2B,700,700.0
 Andde,2B,700,700.0
+Olivier Waltener,1B,1200,1187.6
