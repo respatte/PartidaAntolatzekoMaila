@@ -22,7 +22,7 @@ class Pilotari(object):
                 self.category = player_info["Category"]
                 self.pam_solo = float(player_info["PAM_solo"])
                 self.pam_duo = float(player_info["PAM_duo"])
-                self.member = bool(player_info["Member"])
+                self.member = player_info["Member"]
         # If no filename or player not registered, create new player
         if not player_exists:
             self.new_player(name, filename)
@@ -58,7 +58,9 @@ class Pilotari(object):
         self.member = member == "oui"
         # If filename provided, save player at the end of file
         if filename:
-            player_info = [self.name,self.category,self.pam_solo,self.pam_duo]
+            player_info = [self.name,self.category,
+                           self.pam_solo,self.pam_duo,
+                           self.member]
             player_line = ",".join(str(info) for info in player_info) + "\n"
             with open(filename,"a") as myfile:
                 myfile.write(player_line)
@@ -69,6 +71,7 @@ class Pilotari(object):
         club_players.loc[club_players["Name"] == self.name] = [self.name,
                                                                self.category,
                                                                self.pam_solo,
-                                                               self.pam_duo]
+                                                               self.pam_duo,
+                                                               self.member]
         club_players.to_csv(filename, index = False)
             

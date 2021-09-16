@@ -27,39 +27,40 @@ Un classement des joueurs avec les dernières informations entrées et synchroni
 |            9 | Jean-Luc Sallaberry      | 1A      |  1385 |
 |           10 | Georges Bachette-Peyrade | 1A      |  1385 |
 |           11 | Charles Coustille        | 1B      |  1234 |
-|           12 | Arthur Capelier-Mourguy  | 1B      |  1200 |
-|           13 | Vincent Pasquesoone      | 1B      |  1200 |
-|           14 | Mathieu Olhagaray        | 1B      |  1200 |
-|           15 | Mathieu Leizagoyen       | 1B      |  1200 |
-|           16 | Loïc Harang              | 1B      |  1200 |
-|           17 | Alexandre de la Raitrie  | 1B      |  1200 |
-|           18 | Sébastien Picabea        | 1B      |  1200 |
-|           19 | Thomas Damitio           | 1B      |  1200 |
-|           20 | Baptiste Lagaillardie    | 1B      |  1200 |
-|           21 | Thibaud Babled           | 1B      |  1190 |
-|           22 | Olivier Waltener         | 1B      |  1187 |
-|           23 | Michel Lesueur           | 1B      |  1181 |
-|           24 | Pierre Privat            | 2A      |  1000 |
-|           25 | Guillaume de Lamaze      | 2A      |  1000 |
-|           26 | Peio Arcangues           | 2A      |  1000 |
-|           27 | Victor Lassalle          | 2A      |  1000 |
-|           28 | Emmanuel Poidevin        | 2A      |  1000 |
-|           29 | Clément Bonnichon        | 2A      |  1000 |
-|           30 | Pierre Meglin            | 2A      |  1000 |
-|           31 | Olivier de Bernardi      | 2A      |  1000 |
-|           32 | Bertrand Lebel           | 2A      |  1000 |
-|           33 | Lawrence Robert          | 2A      |  1000 |
-|           34 | Haroun Sachs             | 2A      |  1000 |
-|           35 | Dimitri Girardetti       | 2B      |   700 |
-|           36 | Andde                    | 2B      |   700 |
-|           37 | Alois de Bouville        | 2B      |   700 |
-|           38 | Adrien Chamberon         | 2B      |   700 |
-|           39 | Jean-Dominique Daragnes  | 2B      |   700 |
-|           40 | Olivier Matteoli         | 2B      |   700 |
-|           41 | Laurent Fiat             | 2B      |   700 |
-|           42 | Axel Bonneville          | 2B      |   700 |
-|           43 | Jean-Philippe Louis      | 2B      |   700 |
-|           44 | Stéphane Vidaillet       | 2B      |   700 |
-|           45 | Florent Bartoli          | 2B      |   700 |
-|           46 | Igor de Maack            | 2B      |   700 |
-
+|           12 | Mathieu Leizagoyen       | 1B      |  1209 |
+|           13 | Sébastien Picabea        | 1B      |  1205 |
+|           14 | Arthur Capelier-Mourguy  | 1B      |  1203 |
+|           15 | Baptiste Lagaillardie    | 1B      |  1200 |
+|           16 | Alexandre de la Raitrie  | 1B      |  1200 |
+|           17 | Mathieu Olhagaray        | 1B      |  1200 |
+|           18 | Loïc Harang              | 1B      |  1200 |
+|           19 | Vincent Pasquesoone      | 1B      |  1192 |
+|           20 | Thibaud Babled           | 1B      |  1190 |
+|           21 | Olivier Waltener         | 1B      |  1187 |
+|           22 | Michel Lesueur           | 1B      |  1181 |
+|           23 | Olivier de Bernardi      | 2A      |  1016 |
+|           24 | Emmanuel Poidevin        | 2A      |  1012 |
+|           25 | Pierre Meglin            | 2A      |  1000 |
+|           26 | Bertrand Lebel           | 2A      |  1000 |
+|           27 | Guillaume de Lamaze      | 2A      |  1000 |
+|           28 | Pierre Privat            | 2A      |  1000 |
+|           29 | Haroun Sachs             | 2A      |  1000 |
+|           30 | Lawrence Robert          | 2A      |  1000 |
+|           31 | Clément Bonnichon        | 2A      |  1000 |
+|           32 | Victor Lassalle          | 2A      |   997 |
+|           33 | Alois de Bouville        | 2B      |   824 |
+|           34 | Quentin Dionnot          | 2B      |   818 |
+|           35 | Dimitri Girardetti       | 2B      |   814 |
+|           36 | Igor de Maack            | 2B      |   800 |
+|           37 | Adrien Chamberon         | 2B      |   800 |
+|           38 | Jean-Dominique Daragnes  | 2B      |   800 |
+|           39 | Stéphane Vidaillet       | 2B      |   800 |
+|           40 | Olivier Matteoli         | 2B      |   800 |
+|           41 | Louis de Lignac          | 2B      |   795 |
+|           42 | Éric Dupuy               | 2B      |   793 |
+|           43 | Axel Bonneville          | 2B      |   792 |
+|           44 | Jean-Philippe Louis      | 2B      |   789 |
+|           45 | Stéphane Soulier         | 2B      |   778 |
+|           46 | Guillaume Benoit         | 2B      |   775 |
+|           47 | Florent Bartoli          | 2B      |   775 |
+|           48 | Laurent Fiat             | 2B      |   772 |

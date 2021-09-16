@@ -55,7 +55,7 @@ class Maila(object):
     def reinitialise(self, verbose = False):
         """Reinitialise all player PAMs (when updating the elo computations)."""
         # Reinitialise PAMs based on starting club category
-        self.players.loc[(self.players.Category == "2B"), ("PAM_solo","PAM_duo")] = 700
+        self.players.loc[(self.players.Category == "2B"), ("PAM_solo","PAM_duo")] = 800
         self.players.loc[(self.players.Category == "2A"), ("PAM_solo","PAM_duo")] = 1000
         self.players.loc[(self.players.Category == "1B"), ("PAM_solo","PAM_duo")] = 1200
         self.players.loc[(self.players.Category == "1A"), ("PAM_solo","PAM_duo")] = 1400
