@@ -173,14 +173,21 @@ class Maila(object):
     
     def ranking_table(self):
         """Print a ranking table of the players."""
-        sorted_players = self.players.sort_values(by = ["PAM_duo"],
-                                                  ascending = False,
-                                                  ignore_index=True)
+        # Get only active members
+        sorted_players = self.players[self.players.Member]
+        # Sort by descending PAM
+        sorted_players = sorted_players.sort_values(by = ["PAM_duo"],
+                                                    ascending = False,
+                                                    ignore_index=True)
+        # Round PAM value for nicer display
         sorted_players = sorted_players.astype({"PAM_duo":int})
+        # Select relevant columns
         sorted_players = sorted_players[["Name", "Category", "PAM_duo"]]
+        # Make column names French
         sorted_players = sorted_players.rename(columns = {"Name" : "Joueur",
                                                           "Category" : "Série",
                                                           "PAM_duo" : "PAM"})
+        # Start index at 1 and change index name
         sorted_players.index += 1
         sorted_players.index.name = "Classement"
         print(sorted_players.to_markdown())

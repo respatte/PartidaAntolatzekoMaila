@@ -22,6 +22,7 @@ class Pilotari(object):
                 self.category = player_info["Category"]
                 self.pam_solo = float(player_info["PAM_solo"])
                 self.pam_duo = float(player_info["PAM_duo"])
+                self.member = bool(player_info["Member"])
         # If no filename or player not registered, create new player
         if not player_exists:
             self.new_player(name, filename)
@@ -33,14 +34,14 @@ class Pilotari(object):
         
         """
         self.name = name
-        category = None
         # Get club category, define initial PAM based on category
+        category = None
         while category not in ["1A","1B","2A","2B"]:
             category = input("Catégorie club (1A/1B/2A/2B) pour " + name + " : ")
         self.category = category
         if category == "2B":
-            self.pam_solo = 700
-            self.pam_duo = 700
+            self.pam_solo = 800
+            self.pam_duo = 800
         elif category == "2A":
             self.pam_solo = 1000
             self.pam_duo = 1000
@@ -50,6 +51,11 @@ class Pilotari(object):
         else:
             self.pam_solo = 1400
             self.pam_duo = 1400
+        # Is player an active member? (for club ranking displays)
+        member = None
+        while member not in ["oui", "non"]:
+            member = input(name + "est-il membre actif du club ? (oui/non) ")
+        self.member = member == "oui"
         # If filename provided, save player at the end of file
         if filename:
             player_info = [self.name,self.category,self.pam_solo,self.pam_duo]
