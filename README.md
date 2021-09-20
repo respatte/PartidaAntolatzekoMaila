@@ -16,51 +16,57 @@ Un classement des joueurs avec les dernières informations entrées et synchroni
 
 |   Classement | Joueur                   | Série   |   PAM |
 |-------------:|:-------------------------|:--------|------:|
-|            1 | Nicolas Ossard           | 1A      |  1420 |
-|            2 | Hugues Saint-Pierre      | 1A      |  1412 |
-|            3 | Peio Mendiarat           | 1A      |  1409 |
-|            4 | Evhan Dijoux             | 1A      |  1402 |
-|            5 | Thibault Martre          | 1A      |  1402 |
-|            6 | Charles Bachette-Peyrade | 1A      |  1400 |
-|            7 | Ramire Nunez             | 1A      |  1400 |
-|            8 | Côme Saint-Pierre        | 1A      |  1387 |
-|            9 | Jean-Luc Sallaberry      | 1A      |  1385 |
-|           10 | Georges Bachette-Peyrade | 1A      |  1385 |
-|           11 | Charles Coustille        | 1B      |  1234 |
-|           12 | Mathieu Leizagoyen       | 1B      |  1209 |
-|           13 | Sébastien Picabea        | 1B      |  1205 |
-|           14 | Arthur Capelier-Mourguy  | 1B      |  1203 |
-|           15 | Baptiste Lagaillardie    | 1B      |  1200 |
-|           16 | Alexandre de la Raitrie  | 1B      |  1200 |
+|            1 | Hugues Saint-Pierre      | 1A      |  1419 |
+|            2 | Nicolas Ossard           | 1A      |  1414 |
+|            3 | Peio Mendiarat           | 1A      |  1407 |
+|            4 | Ramire Nunez             | 1A      |  1400 |
+|            5 | Charles Bachette-Peyrade | 1A      |  1392 |
+|            6 | Thibault Martre          | 1A      |  1386 |
+|            7 | Georges Bachette-Peyrade | 1A      |  1383 |
+|            8 | Côme Saint-Pierre        | 1A      |  1382 |
+|            9 | Evhan Dijoux             | 1A      |  1378 |
+|           10 | Jean-Luc Sallaberry      | 1A      |  1362 |
+|           11 | Julien Jimenez           | 1A      |  1356 |
+|           12 | Olivier Waltener         | 1B      |  1253 |
+|           13 | Charles Coustille        | 1B      |  1239 |
+|           14 | Thibaud Babled           | 1B      |  1234 |
+|           15 | Michel Lesueur           | 1B      |  1218 |
+|           16 | Sébastien Picabea        | 1B      |  1207 |
 |           17 | Mathieu Olhagaray        | 1B      |  1200 |
-|           18 | Loïc Harang              | 1B      |  1200 |
-|           19 | Vincent Pasquesoone      | 1B      |  1192 |
-|           20 | Thibaud Babled           | 1B      |  1190 |
-|           21 | Olivier Waltener         | 1B      |  1187 |
-|           22 | Michel Lesueur           | 1B      |  1181 |
-|           23 | Olivier de Bernardi      | 2A      |  1016 |
-|           24 | Emmanuel Poidevin        | 2A      |  1012 |
-|           25 | Pierre Meglin            | 2A      |  1000 |
-|           26 | Bertrand Lebel           | 2A      |  1000 |
-|           27 | Guillaume de Lamaze      | 2A      |  1000 |
-|           28 | Pierre Privat            | 2A      |  1000 |
-|           29 | Haroun Sachs             | 2A      |  1000 |
-|           30 | Lawrence Robert          | 2A      |  1000 |
-|           31 | Clément Bonnichon        | 2A      |  1000 |
-|           32 | Victor Lassalle          | 2A      |   997 |
-|           33 | Alois de Bouville        | 2B      |   824 |
-|           34 | Quentin Dionnot          | 2B      |   818 |
-|           35 | Dimitri Girardetti       | 2B      |   814 |
-|           36 | Igor de Maack            | 2B      |   800 |
-|           37 | Adrien Chamberon         | 2B      |   800 |
-|           38 | Jean-Dominique Daragnes  | 2B      |   800 |
-|           39 | Stéphane Vidaillet       | 2B      |   800 |
-|           40 | Olivier Matteoli         | 2B      |   800 |
-|           41 | Louis de Lignac          | 2B      |   795 |
-|           42 | Éric Dupuy               | 2B      |   793 |
-|           43 | Axel Bonneville          | 2B      |   792 |
-|           44 | Jean-Philippe Louis      | 2B      |   789 |
-|           45 | Stéphane Soulier         | 2B      |   778 |
-|           46 | Guillaume Benoit         | 2B      |   775 |
-|           47 | Florent Bartoli          | 2B      |   775 |
-|           48 | Laurent Fiat             | 2B      |   772 |
+|           18 | Baptiste Lagaillardie    | 1B      |  1200 |
+|           19 | Loïc Harang              | 1B      |  1200 |
+|           20 | Vincent Pasquesoone      | 1B      |  1197 |
+|           21 | Mathieu Leizagoyen       | 1B      |  1191 |
+|           22 | Alexandre de la Raitrie  | 1B      |  1178 |
+|           23 | Arthur Capelier-Mourguy  | 1B      |  1167 |
+|           24 | Clément Bonnichon        | 2A      |  1022 |
+|           25 | Victor Lassalle          | 2A      |  1018 |
+|           26 | Éric Edwards             | 2A      |  1011 |
+|           27 | Emmanuel Poidevin        | 2A      |  1009 |
+|           28 | Bertrand Lebel           | 2A      |  1000 |
+|           29 | Pierre Meglin            | 2A      |  1000 |
+|           30 | Pierre Privat            | 2A      |  1000 |
+|           31 | Guillaume de Lamaze      | 2A      |  1000 |
+|           32 | Alex Duthil              | 2A      |   994 |
+|           33 | Cyril Houplain           | 2A      |   992 |
+|           34 | Olivier de Bernardi      | 2A      |   987 |
+|           35 | Lawrence Robert          | 2A      |   978 |
+|           36 | Haroun Sachs             | 2A      |   956 |
+|           37 | Dimitri Girardetti       | 2B      |   850 |
+|           38 | Stéphane Vidaillet       | 2B      |   841 |
+|           39 | Alois de Bouville        | 2B      |   826 |
+|           40 | Caroline Leclercq        | 2B      |   822 |
+|           41 | Quentin Dionnot          | 2B      |   820 |
+|           42 | Louis de Lignac          | 2B      |   806 |
+|           43 | Jacques Guerin           | 2B      |   804 |
+|           44 | Jean-Dominique Daragnes  | 2B      |   800 |
+|           45 | Olivier Matteoli         | 2B      |   797 |
+|           46 | Jean-Philippe Louis      | 2B      |   792 |
+|           47 | Axel Bonneville          | 2B      |   790 |
+|           48 | Éric Dupuy               | 2B      |   787 |
+|           49 | Igor de Maack            | 2B      |   786 |
+|           50 | Laurent Fiat             | 2B      |   783 |
+|           51 | Adrien Chamberon         | 2B      |   777 |
+|           52 | Florent Bartoli          | 2B      |   777 |
+|           53 | Stéphane Soulier         | 2B      |   776 |
+|           54 | Guillaume Benoit         | 2B      |   771 |

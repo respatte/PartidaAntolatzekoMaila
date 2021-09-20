@@ -16,7 +16,7 @@ class Maila(object):
     def add_game(self):
         """Add a game to the database and update player PAMs."""
         # Gather game information
-        (mode, game_date, players, scores, sets) = self.gather_game_info()
+        (mode, game_date, players, scores, sets, weight) = self.gather_game_info()
         # Save game information to database
         if mode == "duo":
             game_info = [players[team][p].name for team in players
@@ -26,11 +26,13 @@ class Maila(object):
             game_info = [tmp[0], None, tmp[1], None]
         game_info.append(self.scores_to_str(scores))
         game_info.append(sets)
+        game_info.append(weight)
         game_info.append(game_date)
         self.games.loc[len(self.games.index)] = game_info
         self.games.to_csv(self.games_file, index = False)
         # Update player PAMs based on game
-        PAMs_update = self.update_PAM(mode, players, scores, sets)
+        PAMs_update = self.update_PAM(mode, players, scores,
+                                      int(sets), float(weight))
         if mode == "duo":
             for p in range(2):
                 players["Team 1"][p].pam_duo += PAMs_update[0]
@@ -72,7 +74,8 @@ class Maila(object):
                                    Pilotari(game.T2P2, self.players_file)]}
             scores = self.str_to_score(game.Score)
             sets = int(game.Sets)
-            PAMs_update = self.update_PAM(mode, players, scores, sets)
+            weight = float(game.Weight)
+            PAMs_update = self.update_PAM(mode, players, scores, sets, weight)
             if verbose:
                 saved_updates.append(PAMs_update)
             if mode == "duo":
@@ -111,6 +114,10 @@ class Maila(object):
             for p in range(n_players):
                 player_name = input(f"Équipe {t+1}, joueur {p+1} : ")
                 players[team].append(Pilotari(player_name, self.players_file))
+        # Ask for game weight (to account for special tournaments)
+        weight = input("Poids de la partie (défaut 1) : ")
+        if weight == "":
+            weight = 1
         # Get score and number of sets
         score_approved = False
         while not score_approved:
@@ -123,7 +130,7 @@ class Maila(object):
             check = input(f"Score entrés : {scores}. Valider ? (oui/non) ")
             score_approved = check == "oui"
         # Return players list, total scores, and number of sets
-        return (mode, game_date, players, scores, sets)
+        return (mode, game_date, players, scores, sets, weight)
     
     def scores_to_str(self, scores):
         return " ".join([f"{score[0]}-{score[1]}" for score in scores])
@@ -132,7 +139,7 @@ class Maila(object):
         return [[int(points) for points in score.split("-")]
                 for score in str_scores.split(" ")]
     
-    def update_PAM(self, mode, players, scores, sets):
+    def update_PAM(self, mode, players, scores, sets, weight):
         """Update PAMs for all players for a given game."""
         # Setup general ELO rating parameters
         c = 100
@@ -150,11 +157,8 @@ class Maila(object):
         # Team 2's result and prediction is 1 - team 1's result and prediction
         predT1 = 1 / (1 + c**((PAMs[1] - PAMs[0])/d))
         resT1 = sum([score[0]>score[1] for score in scores]) > sets/2
-        # Compute match importance as total score difference
-        total_score = np.sum(scores, axis = 0)
-        win_score = 1-resT1 # Index for winner in total_score
-        ## If looser scored more points, code ratio as 1
-        k = 20 * (3 - 2*min(total_score)/total_score[win_score])
+        # Compute points in play, weighed to account for atypical tournaments
+        k = 30 * weight
         # Get new PAMs
         PAMs_update = [k*(resT1-predT1),
                        k*(predT1-resT1)]
