@@ -16,7 +16,7 @@ class Maila(object):
     def add_game(self):
         """Add a game to the database and update player PAMs."""
         # Gather game information
-        (mode, game_date, players, scores, sets, weight) = self.gather_game_info()
+        (mode, game_date, players, score, weight) = self.gather_game_info()
         # Save game information to database
         if mode == "duo":
             game_info = [players[team][p].name for team in players
@@ -24,15 +24,13 @@ class Maila(object):
         else:
             tmp = [players[team][0].name for team in players]
             game_info = [tmp[0], None, tmp[1], None]
-        game_info.append(self.scores_to_str(scores))
-        game_info.append(sets)
+        game_info.append(self.scores_to_str(score))
         game_info.append(weight)
         game_info.append(game_date)
         self.games.loc[len(self.games.index)] = game_info
         self.games.to_csv(self.games_file, index = False)
         # Update player PAMs based on game
-        PAMs_update = self.update_PAM(mode, players, scores,
-                                      int(sets), float(weight))
+        PAMs_update = self.update_PAM(mode, players, score, float(weight))
         if mode == "duo":
             for p in range(2):
                 players["Team 1"][p].pam_duo += PAMs_update[0]
@@ -72,10 +70,9 @@ class Maila(object):
                                    Pilotari(game.T1P2, self.players_file)],
                        "Team 2" : [Pilotari(game.T2P1, self.players_file),
                                    Pilotari(game.T2P2, self.players_file)]}
-            scores = self.str_to_score(game.Score)
-            sets = int(game.Sets)
+            score = self.str_to_score(game.Score)
             weight = float(game.Weight)
-            PAMs_update = self.update_PAM(mode, players, scores, sets, weight)
+            PAMs_update = self.update_PAM(mode, players, score, weight)
             if verbose:
                 saved_updates.append(PAMs_update)
             if mode == "duo":
@@ -119,27 +116,18 @@ class Maila(object):
         if weight == "":
             weight = 1
         # Get score and number of sets
-        score_approved = False
-        while not score_approved:
-            scores = []
-            sets = int(input("Nombre de sets joués : "))
-            for s in range(sets):
-                tmp = input(f"Score set {s+1} (pour l'équipe 1, format N1-N2) : ").split("-")
-                set_score = [int(points) for points in tmp]
-                scores.append(set_score)
-            check = input(f"Score entrés : {scores}. Valider ? (oui/non) ")
-            score_approved = check == "oui"
+        tmp = input("Score pour l'équipe 1 (en sets, format S1-S2) : ").split("-")
+        score = [int(sets) for sets in tmp]
         # Return players list, total scores, and number of sets
-        return (mode, game_date, players, scores, sets, weight)
+        return (mode, game_date, players, score, weight)
     
-    def scores_to_str(self, scores):
-        return " ".join([f"{score[0]}-{score[1]}" for score in scores])
+    def scores_to_str(self, score):
+        return f"{score[0]}-{score[1]}"
     
-    def str_to_score(self, str_scores):
-        return [[int(points) for points in score.split("-")]
-                for score in str_scores.split(" ")]
+    def str_to_score(self, str_score):
+        return [int(sets) for sets in str_score.split("-")]
     
-    def update_PAM(self, mode, players, scores, sets, weight):
+    def update_PAM(self, mode, players, score, weight):
         """Update PAMs for all players for a given game."""
         # Setup general ELO rating parameters
         c = 100
@@ -156,7 +144,7 @@ class Maila(object):
         # Compute each team 1's result and prediction according to PAMs
         # Team 2's result and prediction is 1 - team 1's result and prediction
         predT1 = 1 / (1 + c**((PAMs[1] - PAMs[0])/d))
-        resT1 = sum([score[0]>score[1] for score in scores]) > sets/2
+        resT1 = int(score[0] > score[1])
         # Compute points in play, weighed to account for atypical tournaments
         k = 30 * weight
         # Get new PAMs
