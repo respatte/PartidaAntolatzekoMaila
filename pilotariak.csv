@@ -1,25 +1,25 @@
 Name,Category,PAM_solo,PAM_duo,Member
 Arthur Capelier-Mourguy,1B,1200,1167.697966562027,True
 Bertrand Lebel,2A,1000,1000.0,True
-Michel Lesueur,1B,1200,1218.9973849219252,True
-Guillaume de Lamaze,2A,1000,1000.0,True
-Baptiste Lagaillardie,1B,1200,1200.0,True
-Olivier de Bernardi,2A,1000,987.5299002527728,True
-Sébastien Picabea,1B,1200,1207.7924077994387,True
-Alexandre de la Raitrie,1B,1200,1178.5247782206588,True
-Pierre Meglin,2A,1000,1000.0,True
+Michel Lesueur,1B,1200,1245.0937785131568,True
+Guillaume de Lamaze,2A,1000,984.103880144944,True
+Baptiste Lagaillardie,1B,1200,1197.2822221566284,True
+Olivier de Bernardi,2A,1000,989.8501990262222,True
+Sébastien Picabea,1B,1200,1235.4393994371603,True
+Alexandre de la Raitrie,1B,1200,1175.8070003772873,True
+Pierre Meglin,2A,1000,1027.6469916377218,True
 Mathieu Leizagoyen,1B,1200,1191.814469127163,True
-Vincent Pasquesoone,1B,1200,1197.7086641843864,True
-Clément Bonnichon,2A,1000,1022.0973392669432,True
-Thibault Martre,1A,1400,1386.5895593986406,True
-Georges Bachette-Peyrade,1A,1400,1383.5840923904243,True
-Charles Coustille,1B,1200,1239.303118236375,True
+Vincent Pasquesoone,1B,1200,1170.0616725466648,True
+Clément Bonnichon,2A,1000,1053.9665549856627,True
+Thibault Martre,1A,1400,1389.3073372420122,True
+Georges Bachette-Peyrade,1A,1400,1388.0756437073314,True
+Charles Coustille,1B,1200,1224.0776008617515,True
 Ramire Nunez,1A,1400,1400.0,True
-Jean-Luc Sallaberry,1A,1400,1362.1173294443142,True
-Evhan Dijoux,1A,1400,1378.5051207887957,True
-Côme Saint-Pierre,1A,1400,1382.7160668591766,True
-Charles Bachette-Peyrade,1A,1400,1392.6015337342403,True
-Thibaud Babled,1B,1200,1234.002505689156,True
+Jean-Luc Sallaberry,1A,1400,1350.8541488756298,True
+Evhan Dijoux,1A,1400,1357.3440128225736,True
+Côme Saint-Pierre,1A,1400,1413.6963161193914,True
+Charles Bachette-Peyrade,1A,1400,1372.003919810531,True
+Thibaud Babled,1B,1200,1228.0669150975573,True
 Olivier Matteoli,2B,800,797.7160668591766,True
 Dimitri Girardetti,2B,800,850.5501319140947,True
 Igor de Maack,2B,800,786.3794142469359,True
@@ -28,23 +28,23 @@ Stéphane Vidaillet,2B,800,841.2100978897175,True
 Jean-Philippe Louis,2B,800,792.7947847571552,True
 Axel Bonneville,2B,800,790.9828768052237,True
 Laurent Fiat,2B,800,783.7332087522408,True
-Victor Lassalle,2A,1000,1018.2374767038174,True
-Hugues Saint-Pierre,1A,1400,1419.7001673502314,True
+Victor Lassalle,2A,1000,992.4214335751916,True
+Hugues Saint-Pierre,1A,1400,1438.5240078004056,True
 Mathieu Olhagaray,1B,1200,1200.0,True
 Loïc Harang,1B,1200,1200.0,True
 Thomas Damitio,1B,1200,1200.0,False
 Adrien Chamberon,2B,800,777.9026607330568,True
 Lawrence Robert,2A,1000,978.5332370538902,True
-Haroun Sachs,2A,1000,956.7721690622018,True
+Haroun Sachs,2A,1000,946.7099974890972,True
 Jean-Dominique Daragnes,2B,800,800.0,True
 Pierre Privat,2A,1000,1000.0,True
-Emmanuel Poidevin,2A,1000,1009.498928016175,True
+Emmanuel Poidevin,2A,1000,998.6280517995672,True
 Peio Arcangues,2A,1000,1000.0,False
-Nicolas Ossard,1A,1400,1414.4151844011226,True
-Peio Mendiarat,1A,1400,1407.2075922005613,True
+Nicolas Ossard,1A,1400,1431.6139555614056,True
+Peio Mendiarat,1A,1400,1420.7038426736497,True
 Alois de Bouville,2B,800,826.1949951801548,True
 Andde,2B,800,800.0,False
-Olivier Waltener,1B,1200,1253.871476667348,True
+Olivier Waltener,1B,1200,1246.3108167858582,True
 Nico moustache,2B,800,805.0621118255638,False
 Éric Dupuy,2B,800,787.2928338952431,True
 Stéphane Soulier,2B,800,776.6128372551719,True
@@ -60,3 +60,5 @@ Alex Duthil,2A,1000,994.4204605081133,True
 Julien Jimenez,1A,1400,1356.7721690622016,True
 Éric Edwards,2A,1000,1011.1686475008994,True
 Jacques Guerin,2B,800,804.7001673502317,True
+Thibault Leguillon,1B,1200,1189.9378284268955,True
+Rodrigo de la Vega,1A,1400,1384.2452681144086,False
