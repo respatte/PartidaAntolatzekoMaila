@@ -1,58 +1,58 @@
 Name,Category,PAM_solo,PAM_duo,Member
 Arthur Capelier-Mourguy,1B,1200,1167.697966562027,True
-Bertrand Lebel,2A,1000,1000.0,True
+Bertrand Lebel,2A,1000,1001.9091437441936,True
 Michel Lesueur,1B,1200,1245.0937785131568,True
 Guillaume de Lamaze,2A,1000,984.103880144944,True
-Baptiste Lagaillardie,1B,1200,1197.2822221566284,True
-Olivier de Bernardi,2A,1000,989.8501990262222,True
+Baptiste Lagaillardie,1B,1200,1193.8609871769163,True
+Olivier de Bernardi,2A,1000,989.786471082167,True
 Sébastien Picabea,1B,1200,1235.4393994371603,True
-Alexandre de la Raitrie,1B,1200,1175.8070003772873,True
+Alexandre de la Raitrie,1B,1200,1172.3857653975751,True
 Pierre Meglin,2A,1000,1027.6469916377218,True
-Mathieu Leizagoyen,1B,1200,1191.814469127163,True
-Vincent Pasquesoone,1B,1200,1170.0616725466648,True
-Clément Bonnichon,2A,1000,1053.9665549856627,True
-Thibault Martre,1A,1400,1389.3073372420122,True
-Georges Bachette-Peyrade,1A,1400,1388.0756437073314,True
-Charles Coustille,1B,1200,1224.0776008617515,True
+Mathieu Leizagoyen,1B,1200,1186.623951442513,True
+Vincent Pasquesoone,1B,1200,1120.4771811710225,True
+Clément Bonnichon,2A,1000,1080.4053761502,True
+Thibault Martre,1A,1400,1404.197667419406,True
+Georges Bachette-Peyrade,1A,1400,1391.4968786870436,True
+Charles Coustille,1B,1200,1216.275443903011,True
 Ramire Nunez,1A,1400,1400.0,True
-Jean-Luc Sallaberry,1A,1400,1350.8541488756298,True
-Evhan Dijoux,1A,1400,1357.3440128225736,True
-Côme Saint-Pierre,1A,1400,1413.6963161193914,True
+Jean-Luc Sallaberry,1A,1400,1344.5755713625977,True
+Evhan Dijoux,1A,1400,1342.45368264518,True
+Côme Saint-Pierre,1A,1400,1421.498473078132,True
 Charles Bachette-Peyrade,1A,1400,1372.003919810531,True
 Thibaud Babled,1B,1200,1228.0669150975573,True
-Olivier Matteoli,2B,800,797.7160668591766,True
-Dimitri Girardetti,2B,800,850.5501319140947,True
-Igor de Maack,2B,800,786.3794142469359,True
-Florent Bartoli,2B,800,777.5351359955552,True
-Stéphane Vidaillet,2B,800,841.2100978897175,True
+Olivier Matteoli,2B,800,791.7274258789157,True
+Dimitri Girardetti,2B,800,863.8935661521136,True
+Igor de Maack,2B,800,817.939116277494,True
+Florent Bartoli,2B,800,771.5097868948588,True
+Stéphane Vidaillet,2B,800,814.7712767251801,True
 Jean-Philippe Louis,2B,800,792.7947847571552,True
 Axel Bonneville,2B,800,790.9828768052237,True
 Laurent Fiat,2B,800,783.7332087522408,True
 Victor Lassalle,2A,1000,992.4214335751916,True
-Hugues Saint-Pierre,1A,1400,1438.5240078004056,True
+Hugues Saint-Pierre,1A,1400,1446.3261647591462,True
 Mathieu Olhagaray,1B,1200,1200.0,True
 Loïc Harang,1B,1200,1200.0,True
 Thomas Damitio,1B,1200,1200.0,False
-Adrien Chamberon,2B,800,777.9026607330568,True
+Adrien Chamberon,2B,800,769.2066330602319,True
 Lawrence Robert,2A,1000,978.5332370538902,True
-Haroun Sachs,2A,1000,946.7099974890972,True
+Haroun Sachs,2A,1000,916.572388795827,True
 Jean-Dominique Daragnes,2B,800,800.0,True
 Pierre Privat,2A,1000,1000.0,True
 Emmanuel Poidevin,2A,1000,998.6280517995672,True
 Peio Arcangues,2A,1000,1000.0,False
-Nicolas Ossard,1A,1400,1431.6139555614056,True
+Nicolas Ossard,1A,1400,1438.7021287800587,True
 Peio Mendiarat,1A,1400,1420.7038426736497,True
-Alois de Bouville,2B,800,826.1949951801548,True
+Alois de Bouville,2B,800,818.2112539032191,True
 Andde,2B,800,800.0,False
-Olivier Waltener,1B,1200,1246.3108167858582,True
+Olivier Waltener,1B,1200,1274.5392817349348,True
 Nico moustache,2B,800,805.0621118255638,False
 Éric Dupuy,2B,800,787.2928338952431,True
 Stéphane Soulier,2B,800,776.6128372551719,True
-Louis de Lignac,2B,800,806.5609321607412,True
+Louis de Lignac,2B,800,800.0831342336613,True
 Stan moustache,2B,800,835.663903789579,False
 Guillaume Benoit,2B,800,771.7224206189195,True
 Pierre-Antoine,2B,800,786.3068647868282,False
-Quentin Dionnot,2B,800,820.1844758970127,True
+Quentin Dionnot,2B,800,820.6565018656659,True
 Caroline Leclercq,2B,800,822.0973392669432,True
 Jeff Suisse,1B,1200,1214.015460883214,False
 Cyril Houplain,2A,1000,992.601533734241,True
@@ -62,3 +62,9 @@ Julien Jimenez,1A,1400,1356.7721690622016,True
 Jacques Guerin,2B,800,804.7001673502317,True
 Thibault Leguillon,1B,1200,1189.9378284268955,True
 Rodrigo de la Vega,1A,1400,1384.2452681144086,False
+Baptiste Guyot,2B,800,819.9977313578929,True
+Gabi,2B,800,786.1845397933279,False
+Tankred,2B,800,813.8154602066721,False
+Marco,2B,800,815.1738255999048,False
+Pierre-Henri,2B,800,784.8261744000952,True
+Arthur Schwarz,2B,800,819.4468826823719,True
