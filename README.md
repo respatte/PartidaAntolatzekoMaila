@@ -9,30 +9,30 @@ k = 30 * poids_partie
 ```
 
 ## Classement des joueurs
-Un classement des joueurs avec les dernières informations entrées et synchronisées est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
+Un classement des joueurs au 1er Octobre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
 
 |   Classement | Joueur                   | Série   |   PAM |
 |-------------:|:-------------------------|:--------|------:|
-|            1 | Côme Saint-Pierre        | 1A      |  1465 |
+|            1 | Côme Saint-Pierre        | 1A      |  1504 |
 |            2 | Nicolas Ossard           | 1A      |  1438 |
-|            3 | Thibault Martre          | 1A      |  1428 |
-|            4 | Hugues Saint-Pierre      | 1A      |  1402 |
-|            5 | Ramire Nunez             | 1A      |  1400 |
-|            6 | Peio Mendiarat           | 1A      |  1387 |
-|            7 | Julien Jimenez           | 1A      |  1386 |
+|            3 | Thibault Martre          | 1A      |  1419 |
+|            4 | Ramire Nunez             | 1A      |  1400 |
+|            5 | Peio Mendiarat           | 1A      |  1387 |
+|            6 | Julien Jimenez           | 1A      |  1386 |
+|            7 | Hugues Saint-Pierre      | 1A      |  1385 |
 |            8 | Charles Bachette-Peyrade | 1A      |  1372 |
-|            9 | Evhan Dijoux             | 1A      |  1345 |
-|           10 | Georges Bachette-Peyrade | 1A      |  1337 |
+|            9 | Georges Bachette-Peyrade | 1A      |  1337 |
+|           10 | Evhan Dijoux             | 1A      |  1331 |
 |           11 | Jean-Luc Sallaberry      | 1A      |  1320 |
-|           12 | Michel Lesueur           | 1B      |  1275 |
+|           12 | Michel Lesueur           | 1B      |  1285 |
 |           13 | Olivier Waltener         | 1B      |  1274 |
 |           14 | Charles Coustille        | 1B      |  1261 |
-|           15 | Sébastien Picabea        | 1B      |  1219 |
-|           16 | Mathieu Leizagoyen       | 1B      |  1209 |
+|           15 | Sébastien Picabea        | 1B      |  1232 |
+|           16 | Loïc Harang              | 1B      |  1208 |
 |           17 | Thibaud Babled           | 1B      |  1205 |
-|           18 | Loïc Harang              | 1B      |  1200 |
-|           19 | Mathieu Olhagaray        | 1B      |  1200 |
-|           20 | Thibault Leguillon       | 1B      |  1189 |
+|           18 | Mathieu Olhagaray        | 1B      |  1200 |
+|           19 | Mathieu Leizagoyen       | 1B      |  1187 |
+|           20 | Thibault Leguillon       | 1B      |  1181 |
 |           21 | Arthur Capelier-Mourguy  | 1B      |  1160 |
 |           22 | Alexandre de la Raitrie  | 1B      |  1150 |
 |           23 | Baptiste Lagaillardie    | 1B      |  1140 |
