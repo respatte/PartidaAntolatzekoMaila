@@ -62,9 +62,9 @@ Un classement des joueurs au 1er Octobre 2021 est disponible ci-dessous. Attenti
 |           47 | Stéphane Vidaillet       | 2B      |   814 |
 |           48 | Jacques Guerin           | 2B      |   804 |
 |           49 | Éric Dupuy               | 2B      |   797 |
-|           50 | Louis de Lignac          | 2B      |   792 |
+|           50 | Louis Babin              | 2B      |   792 |
 |           51 | Olivier Matteoli         | 2B      |   791 |
-|           52 | Pierre-Henri             | 2B      |   784 |
+|           52 | Pierre-Henri Lajouane    | 2B      |   784 |
 |           53 | Nicolas Robuchon         | 2B      |   784 |
 |           54 | Adrien Chamberon         | 2B      |   776 |
 |           55 | Stéphane Soulier         | 2B      |   776 |

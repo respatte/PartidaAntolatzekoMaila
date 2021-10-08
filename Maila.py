@@ -13,7 +13,7 @@ class Maila(object):
         self.games_file = games_file
         self.games = pd.read_csv(games_file)
     
-    def add_game(self):
+    def add_game(self, verbose = True):
         """Add a game to the database and update player PAMs."""
         # Gather game information
         (mode, game_date, players, score, weight) = self.gather_game_info()
@@ -31,6 +31,8 @@ class Maila(object):
         self.games.to_csv(self.games_file, index = False)
         # Update player PAMs based on game
         PAMs_update = self.update_PAM(mode, players, score, float(weight))
+        if verbose:
+            print("Points changed by", max(PAMs_update))
         if mode == "duo":
             for p in range(2):
                 players["Team 1"][p].pam_duo += PAMs_update[0]
