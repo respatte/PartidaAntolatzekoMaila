@@ -77,6 +77,7 @@ class Maila(object):
             PAMs_update = self.update_PAM(mode, players, score, weight)
             if verbose:
                 saved_updates.append(PAMs_update)
+                print(i+2)
             if mode == "duo":
                 for p in range(2):
                     players["Team 1"][p].pam_duo += PAMs_update[0]

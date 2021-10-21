@@ -8,16 +8,16 @@ Georges Bachette-Peyrade,Jean-Luc Sallaberry,Evhan Dijoux,Michel Lesueur,2-0,1.0
 Hugues Saint-Pierre,Charles Coustille,Côme Saint-Pierre,Olivier Waltener,2-1,1.0,2021-09-14
 Nicolas Ossard,Peio Mendiarat,Thibault Martre,Thibaud Babled,2-0,1.0,2021-09-14
 Evhan Dijoux,Charles Coustille,Jean-Luc Sallaberry,Georges Bachette-Peyrade,2-1,1.0,2021-09-14
-Alois de Bouville,Arthur Capelier-Mourguy,Nico moustache,Laurent Fiat,2-0,1.0,2021-09-15
+Aloïs de Bouville,Arthur Capelier-Mourguy,Nico moustache,Laurent Fiat,2-0,1.0,2021-09-15
 Éric Dupuy,Stéphane Soulier,Nico moustache,Laurent Fiat,0-2,1.0,2021-09-15
-Victor Lassalle,Florent Bartoli,Éric Dupuy,Alois de Bouville,1-2,1.0,2021-09-15
-Olivier de Bernardi,Louis de Lignac,Stéphane Soulier,Nico moustache,2-0,1.0,2021-09-15
+Victor Lassalle,Florent Bartoli,Éric Dupuy,Aloïs de Bouville,1-2,1.0,2021-09-15
+Olivier de Bernardi,Louis Babin,Stéphane Soulier,Nico moustache,2-0,1.0,2021-09-15
 Victor Lassalle,Stan moustache,Florent Bartoli,Laurent Fiat,2-0,1.0,2021-09-15
 Olivier de Bernardi,Éric Dupuy,Axel Bonneville,Jean-Philippe Louis,2-0,1.0,2021-09-15
-Dimitri Girardetti,Stan moustache,Laurent Fiat,Louis de Lignac,2-0,1.0,2021-09-15
+Dimitri Girardetti,Stan moustache,Laurent Fiat,Louis Babin,2-0,1.0,2021-09-15
 Victor Lassalle,Florent Bartoli,Axel Bonneville,Guillaume Benoit,2-1,1.0,2021-09-15
 Olivier de Bernardi,Jean-Philippe Louis,Dimitri Girardetti,Igor de Maack,2-1,1.0,2021-09-15
-Stan moustache,Louis de Lignac,Axel Bonneville,Pierre-Antoine,2-1,1.0,2021-09-15
+Stan moustache,Louis Babin,Axel Bonneville,Pierre-Antoine,2-1,1.0,2021-09-15
 Igor de Maack,Olivier de Bernardi,Éric Dupuy,Jean-Philippe Louis,2-1,1.0,2021-09-15
 Axel Bonneville,Quentin Dionnot,Éric Dupuy,Guillaume Benoit,0-2,1.0,2021-09-15
 Axel Bonneville,Quentin Dionnot,Éric Dupuy,Guillaume Benoit,2-0,1.0,2021-09-15
@@ -57,168 +57,193 @@ Arthur Capelier-Mourguy,Éric Edwards,Thibaud Babled,Stéphane Vidaillet,0-1,0.5
 Julien Jimenez,Haroun Sachs,Hugues Saint-Pierre,Jacques Guerin,0-1,0.5,2021-09-18
 Alexandre de la Raitrie,Olivier de Bernardi,Côme Saint-Pierre,Olivier Matteoli,0-1,0.5,2021-09-18
 Olivier Waltener,Dimitri Girardetti,Côme Saint-Pierre,Olivier Matteoli,1-0,0.5,2021-09-18
-Thibault Martre,Charles Bachette-Peyrade,Baptiste Lagaillardie,Alexandre de la Raitrie,2-0,1.0,2021-09-19 00:00:00
-Olivier de Bernardi,Clément Bonnichon,Haroun Sachs,Thibault Leguillon,2-0,1.0,2021-09-20 00:00:00
-Haroun Sachs,Thibault Leguillon,Victor Lassalle,Guillaume de Lamaze,2-0,1.0,2021-09-20 00:00:00
-Michel Lesueur,Clément Bonnichon,Olivier de Bernardi,Emmanuel Poidevin,2-0,1.0,2021-09-20 00:00:00
-Victor Lassalle,Vincent Pasquesoone,Sébastien Picabea,Pierre Meglin,1-2,1.0,2021-09-20 00:00:00
-Michel Lesueur,Clément Bonnichon,Guillaume de Lamaze,Emmanuel Poidevin,2-1,1.0,2021-09-20 00:00:00
-Sébastien Picabea,Pierre Meglin,Olivier de Bernardi,Vincent Pasquesoone,2-0,2-0,2021-09-20 00:00:00
-Sébastien Picabea,Pierre Meglin,Olivier de Bernardi,Vincent Pasquesoone,2-0,1,2021-09-20 00:00:00
-Nicolas Ossard,Hugues Saint-Pierre,Georges Bachette-Peyrade,Jean-Luc Sallaberry,2-0,1,2021-09-21 00:00:00
-Côme Saint-Pierre,Michel Lesueur,Evhan Dijoux,Charles Coustille,2-1,1,2021-09-21 00:00:00
-Peio Mendiarat,Hugues Saint-Pierre,Charles Bachette-Peyrade,Olivier Waltener,2-0,1,2021-09-21 00:00:00
-Côme Saint-Pierre,Georges Bachette-Peyrade,Charles Bachette-Peyrade,Rodrigo de la Vega,2-1,1,2021-09-21 00:00:00
-Nicolas Ossard,Peio Mendiarat,Thibaud Babled,Evhan Dijoux,2-0,1,2021-09-21 00:00:00
-Alois de Bouville,Clément Bonnichon,Olivier Matteoli,Stéphane Vidaillet,2-1,1,2021-09-22 00:00:00
-Clément Bonnichon,Baptiste Guyot,Alois de Bouville,Stéphane Vidaillet,2-1,1,2021-09-22 00:00:00
-Clément Bonnichon,Baptiste Guyot,Alois de Bouville,Stéphane Vidaillet,2-1,1,2021-09-22 00:00:00
-Igor de Maack,Florent Bartoli,Olivier de Bernardi,Baptiste Guyot,0-2,1,2021-09-22 00:00:00
-Adrien Chamberon,Clément Bonnichon,Louis de Lignac,Stéphane Vidaillet,2-1,1,2021-09-22 00:00:00
-Olivier de Bernardi,Gabi,Dimitri Girardetti,Tankred,2-0,1,2021-09-22 00:00:00
-Igor de Maack,Marco,Adrien Chamberon,Pierre-Henri,2-0,1,2021-09-22 00:00:00
-Olivier de Bernardi,Gabi,Quentin Dionnot,Tankred,0-2,1,2021-09-22 00:00:00
-Igor de Maack,Dimitri Girardetti,Olivier de Bernardi,Quentin Dionnot,2-1,1,2021-09-22 00:00:00
-Thibault Martre,Nicolas Ossard,Mathieu Leizagoyen,Evhan Dijoux,2-1,1,2021-09-23 00:00:00
-Thibault Martre,Nicolas Ossard,Jean-Luc Sallaberry,Evhan Dijoux,2-1,1,2021-09-23 00:00:00
-Bertrand Lebel,Olivier de Bernardi,Vincent Pasquesoone,Haroun Sachs,2-1,1,2021-09-25 00:00:00
-Olivier Waltener,Olivier de Bernardi,Vincent Pasquesoone,Haroun Sachs,2-0,1,2021-09-25 00:00:00
-Arthur Schwarz,Olivier Waltener,Bertrand Lebel,Vincent Pasquesoone,2-0,1,2021-09-25 00:00:00
-Jean-Luc Sallaberry,Georges Bachette-Peyrade,Baptiste Lagaillardie,Alexandre de la Raitrie,2-1,1,2021-09-26 00:00:00
-Côme Saint-Pierre,Hugues Saint-Pierre,Nicolas Ossard,Charles Coustille,2-0,1,2021-09-26 00:00:00
-Haroun Sachs,Alexandre de la Raitrie,Guillaume de Lamaze,Baptiste Lagaillardie,1-2,1,2021-09-27 00:00:00
-Olivier de Bernardi,Alexandre de la Raitrie,Michel Lesueur,Emmanuel Poidevin,1-2,1,2021-09-27 00:00:00
-Sébastien Picabea,Thibaud Babled,Clément Bonnichon,Mathieu Leizagoyen,0-2,1,2021-09-27 00:00:00
-Haroun Sachs,Baptiste Lagaillardie,Pierre Meglin,Vincent Pasquesoone,2-0,1,2021-09-27 00:00:00
-Olivier de Bernardi,Emmanuel Poidevin,Guillaume de Lamaze,Sébastien Picabea,1-2,1,2021-09-27 00:00:00
-Arthur Capelier-Mourguy,Thibault Martre,Julien Jimenez,Baptiste Lagaillardie,0-1,.5,2021-09-28 00:00:00
-Thibault Martre,Julien Jimenez,Baptiste Lagaillardie,Georges Bachette-Peyrade,2-0,1,2021-09-28 00:00:00
-Evhan Dijoux,Hugues Saint-Pierre,Michel Lesueur,Côme Saint-Pierre,0-2,1,2021-09-28 00:00:00
-Thibault Martre,Charles Coustille,Georges Bachette-Peyrade,Peio Mendiarat,2-0,1,2021-09-28 00:00:00
-Côme Saint-Pierre,Julien Jimenez,Jean-Luc Sallaberry,Hugues Saint-Pierre,2-0,1,2021-09-28 00:00:00
-Peio Mendiarat,Georges Bachette-Peyrade,Charles Coustille,Evhan Dijoux,1-2,1,2021-09-28 00:00:00
-Peio Mendiarat,Côme Saint-Pierre,Jean-Luc Sallaberry,Hugues Saint-Pierre,2-0,1,2021-09-28 00:00:00
-Jean-Dominique Daragnes,Nicolas Robuchon,Baptiste Lagaillardie,Axel Bonneville,2-0,1,2021-09-29 00:00:00
-Jean-Dominique Daragnes,Axel Bonneville,Nicolas Robuchon,Baptiste Lagaillardie,2-0,1,2021-09-29 00:00:00
-Laurent Fiat,Baptiste Lagaillardie,Jean-Dominique Daragnes,Axel Bonneville,1-2,1,2021-09-29 00:00:00
-Igor de Maack,Alois de Bouville,Dimitri Girardetti,Jean-Philippe Louis,2-0,1,2021-09-29 00:00:00
-Baptiste Guyot,Guillaume de Lamaze,Laurent Fiat,Jean-Dominique Daragnes,2-1,1,2021-09-29 00:00:00
-Baptiste Lagaillardie,Clément Bonnichon,Axel Bonneville,Nicolas Robuchon,2-0,1,2021-09-29 00:00:00
-Florent Bartoli,Olivier de Bernardi,Victor Lassalle,Igor de Maack,0-2,1,2021-09-29 00:00:00
-Alois de Bouville,Baptiste Guyot,Dimitri Girardetti,Nicolas Robuchon,2-0,1,2021-09-29 00:00:00
-Louis de Lignac,Clément Bonnichon,Adrien Chamberon,Laurent Fiat,2-1,1,2021-09-29 00:00:00
-Florent Bartoli,Olivier de Bernardi,Éric Dupuy,Gabi,2-0,1,2021-09-29 00:00:00
-Adrien Chamberon,Jean-Philippe Louis,Victor Lassalle,Louis de Lignac,0-2,1,2021-09-29 00:00:00
-Florent Bartoli,Olivier de Bernardi,Éric Dupuy,Gabi,1-2,1,2021-09-29 00:00:00
-Gabi,Adrien Chamberon,Jean-Philippe Louis,Louis de Lignac,2-1,1,2021-09-29 00:00:00
-Olivier de Bernardi,Victor Lassalle,Florent Bartoli,Éric Dupuy,2-0,1,2021-09-29 00:00:00
-Evhan Dijoux,Thibault Leguillon,Thibault Martre,Michel Lesueur,0-2,1,2021-09-30 00:00:00
-Côme Saint-Pierre,Evhan Dijoux,Hugues Saint-Pierre,Thibault Martre,2-0,1,2021-09-30 00:00:00
-Sébastien Picabea,Michel Lesueur,Loïc Harang,Maximilien,2-0,1,2021-09-30 00:00:00
-Loïc Harang,Côme Saint-Pierre,Mathieu Leizagoyen,Evhan Dijoux,2-0,1,2021-09-30 00:00:00
-Côme Saint-Pierre,Sébastien Picabea,Evhan Dijoux,Mathieu Leizagoyen,2-0,1,2021-09-30 00:00:00
-Côme Saint-Pierre,Sébastien Picabea,Evhan Dijoux,Mathieu Leizagoyen,1-0,.5,2021-09-30 00:00:00
-Dimitri Girardetti,Jean-Dominique Daragnes,Stéphane Vidaillet,Arthur Capelier-Mourguy,0-2,1,2021-10-01 00:00:00
-Dimitri Girardetti,Jean-Dominique Daragnes,Stéphane Vidaillet,Arthur Capelier-Mourguy,2-1,1,2021-10-01 00:00:00
-Aloïs de Bouville,Arthur Capelier-Mourguy,Stéphane Vidaillet,Jean-Dominique Daragnes,0-2,1,2021-10-01 00:00:00
-Clément Bonnichon,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,2-0,1,2021-10-01 00:00:00
-Clément Bonnichon,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,0-1,.5,2021-10-01 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,2-0,1,2021-10-01 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,0-2,1,2021-10-01 00:00:00
-Bertrand Lebel,Olivier de Bernardi,Haroun Sachs,Thibaud Babled,2-0,1,2021-10-02 00:00:00
-Olivier Waltener,Michel Lesueur,Éric Dupuy,Vincent Pasquesoone,2-1,1,2021-10-02 00:00:00
-Haroun Sachs,Thibaud Babled,Olivier de Bernardi,Bertrand Lebel,0-2,1,2021-10-02 00:00:00
-Vincent Pasquesoone,Éric Dupuy,Michel Lesueur,Thibault Leguillon,0-2,1,2021-10-02 00:00:00
-Olivier Waltener,Bertrand Lebel,Olivier de Bernardi,Thibaud Babled,2-0,1,2021-10-02 00:00:00
-Olivier Waltener,Thibault Leguillon,Michel Lesueur,Vincent Pasquesoone,2-0,1,2021-10-02 00:00:00
-Côme Saint-Pierre,Hugues Saint-Pierre,Pilotari1,Pilotari2,2-0,1,2021-10-02 00:00:00
-Ramire Nunez,Evhan Dijoux,Pilotari1,Pilotari2,2-0,1,2021-10-03 00:00:00
-Éric Edwards,Arthur Capelier-Mourguy,Clément Bonnichon,Bertrand Lebel,2-0,1,2021-10-04 00:00:00
-Éric Edwards,Lawrence Robert,Clément Bonnichon,Bertrand Lebel,2-1,1,2021-10-04 00:00:00
-Clément Bonnichon,Lawrence Robert,Bertrand Lebel,Michel Lesueur,2-0,1,2021-10-04 00:00:00
-Emmanuel Poidevin,Thibault Leguillon,Éric Dupuy,Sébastien Picabea,2-1,1,2021-10-04 00:00:00
-Olivier de Bernardi,Clément Bonnichon,Victor Lassalle,Thibault Leguillon,2-0,1,2021-10-04 00:00:00
-Guillaume de Lamaze,Sébastien Picabea,Pierre Meglin,Vincent Pasquesoone,2-1,1,2021-10-04 00:00:00
-Quentin Dionnot,Emmanuel Poidevin,Olivier de Bernardi,Victor Lassalle,2-0,1,2021-10-04 00:00:00
-Sébastien Picabea,Guillaume de Lamaze,Vincent Pasquesoone,Pierre Meglin,2-0,1,2021-10-04 00:00:00
-Michel Lesueur,Côme Saint-Pierre,Thibault Martre,Julien Jimenez,2-1,1,2021-10-05 00:00:00
-Antoine Penin,Georges Bachette-Peyrade,Olivier Waltener,Hugues Saint-Pierre,1-2,1,2021-10-05 00:00:00
-Evhan Dijoux,Ramire Nunez,Nicolas Ossard,Charles Coustille,2-0,1,2021-10-05 00:00:00
-Thibault Martre,Georges Bachette-Peyrade,Côme Saint-Pierre,Peio Mendiarat,2-1,1,2021-10-05 00:00:00
-Olivier Waltener,Rayann Sachs,Evhan Dijoux,Ramire Nunez,2-1,1,2021-10-05 00:00:00
-Thibault Martre,Rayann Sachs,Peio Mendiarat,Côme Saint-Pierre,0-2,1,2021-10-05 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Baptiste Lagaillardie,Baptiste Guyot,1-2,1,2021-10-06 00:00:00
-Clément Bonnichon,Aloïs de Bouville,Jean-Philippe Louis,Baptiste Lagaillardie,2-0,1,2021-10-06 00:00:00
-Stéphane Soulier,Hugues Dupuy,Louis Babin,Florent Bartoli,2-1,1,2021-10-06 00:00:00
-Clément Bonnichon,Baptiste Guyot,Jean-Philippe Louis,Aloïs de Bouville,2-0,1,2021-10-06 00:00:00
-Olivier de Bernardi,Stéphane Soulier,Florent Bartoli,Gabriel Morat,2-0,1,2021-10-06 00:00:00
-Arthur Capelier-Mourguy,Gabriel Morat,Olivier de Bernardi,Louis Babin,2-1,1,2021-10-06 00:00:00
-Florent Bartoli,Gabriel Morat,Louis Babin,Stéphane Soulier,0-2,1,2021-10-06 00:00:00
-Florent Bartoli,Gabriel Morat,Louis Babin,Stéphane Soulier,2-1,1,2021-10-06 00:00:00
-Arthur Capelier-Mourguy,Gabriel Morat,Louis Babin,Adrien Chamberon,2-0,1,2021-10-06 00:00:00
-Arthur Capelier-Mourguy,Adrien Chamberon,Gabriel Morat,Louis Babin,2-0,1,2021-10-06 00:00:00
-Arthur Capelier-Mourguy,Louis Babin,Adrien Chamberon,Gabriel Morat,2-0,1,2021-10-06 00:00:00
-Arthur Capelier-Mourguy,Antoine Penin,Baptiste Lagaillardie,Michel Lesueur,1-2,1,2021-10-07 00:00:00
-Olivier Waltener,Mathieu Leizagoyen,Michel Lesueur,Evhan Dijoux,0-2,1,2021-10-07 00:00:00
-Thibault Martre,Baptiste Lagaillardie,Côme Saint-Pierre,Bruno Saint-Pierre,2-0,1,2021-10-07 00:00:00
-Clément Bonnichon,Evhan Dijoux,Olivier Waltener,Mathieu Leizagoyen,2-1,1,2021-10-07 00:00:00
-Thibault Martre,Evhan Dijoux,Clément Bonnichon,Côme Saint-Pierre,2-1,1,2021-10-07 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Guillaume de Lamaze,0-2,1,2021-10-08 00:00:00
-Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1,2021-10-08 00:00:00
-Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,2-0,1,2021-10-08 00:00:00
-Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1,2021-10-08 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1,2021-10-08 00:00:00
-Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,2-0,1,2021-10-08 00:00:00
-Olivier de Bernardi,Haroun Sachs,Bertrand Lebel,Hugo Houplain,0-2,1,2021-10-09 00:00:00
-Michel Lesueur,Bertrand Lebel,Haroun Sachs,Vincent Pasquesoone,2-0,1,2021-10-09 00:00:00
-Michel Lesueur,Hugo Houplain,Olivier de Bernardi,Thibaud Babled,1-2,1,2021-10-09 00:00:00
-Christophe Jaulerry,Vincent Pasquesoone,Bertrand Lebel,Éric Dupuy,2-0,1,2021-10-09 00:00:00
-Vincent Pasquesoone,Éric Dupuy,Olivier de Bernardi,Thibaud Babled,1-2,1,2021-10-09 00:00:00
-Vincent Pasquesoone,Éric Dupuy,Olivier de Bernardi,Thibaud Babled,0-1,.5,2021-10-09 00:00:00
-Thibaud Babled,Christophe Jaulerry,Éric Dupuy,Olivier de Bernardi,1-0,.5,2021-10-09 00:00:00
-Thibaud Babled,Christophe Jaulerry,Éric Dupuy,Olivier de Bernardi,0-1,.5,2021-10-09 00:00:00
-Peio Mendiarat,Arthur Capelier-Mourguy,Antoine Penin,Julien Jimenez,1-2,1,2021-10-09 00:00:00
-Peio Mendiarat,Jean-Luc Sallaberry,Antoine Penin,Julien Jimenez,2-1,1,2021-10-09 00:00:00
-Julien Jimenez,Arthur Capelier-Mourguy,Jean-Luc Sallaberry,Antoine Penin,1-2,1,2021-10-09 00:00:00
-Julien Jimenez,Arthur Capelier-Mourguy,Jean-Luc Sallaberry,Antoine Penin,2-0,1,2021-10-09 00:00:00
-Côme Saint-Pierre,Hugues Saint-Pierre,Ramire Nunez,Evhan Dijoux,2-0,1,2021-10-10 00:00:00
-Pilotari1,Pilotari2,Olivier Waltener,Charles Coustille,2-0,1,2021-10-10 00:00:00
-Jean-Marc Lanusse,Lawrence Robert,Clément Bonnichon,Éric Edwards,0-2,1,2021-10-11 00:00:00
-Michel Lesueur,Guillaume de Lamaze,Clément Bonnichon,Éric Edwards,0-2,1,2021-10-11 00:00:00
-Jean-Marc Lanusse,Lawrence Robert,Olivier de Bernardi,Sébastien Picabea,2-1,1,2021-10-11 00:00:00
-Olivier de Bernardi,Sébastien Picabea,Clément Bonnichon,Guillaume de Lamaze,2-1,1,2021-10-11 00:00:00
-Victor Lassalle,Thibaud Babled,Emmanuel Poidevin,Hugo Houplain,2-0,1,2021-10-11 00:00:00
-Olivier de Bernardi,Axel Bonneville,Quentin Dionnot,Sébastien Picabea,1-2,1,2021-10-11 00:00:00
-Victor Lassalle,Thibaud Babled,Emmanuel Poidevin,Hugo Houplain,2-1,1,2021-10-11 00:00:00
-Quentin Dionnot,Olivier de Bernardi,Axel Bonneville,Victor Lassalle,2-0,1,2021-10-11 00:00:00
-Côme Saint-Pierre,Michel Lesueur,Antoine Penin,Ramire Nunez,2-0,1,2021-10-12 00:00:00
-Côme Saint-Pierre,Antoine Penin,Jean-Luc Sallaberry,Ramire Nunez,2-1,1,2021-10-12 00:00:00
-Jean-Luc Sallaberry,Côme Saint-Pierre,Georges Bachette-Peyrade,Ramire Nunez,2-1,1,2021-10-12 00:00:00
-Aloïs de Bouville,Arthur Capelier-Mourguy,Baptiste Lagaillardie,Antoine jeune,1-0,.5,2021-10-13 00:00:00
-Aloïs de Bouville,Baptiste Guyot,Baptiste Lagaillardie,Antoine jeune,2-1,1,2021-10-13 00:00:00
-Aloïs de Bouville,Christophe Jaulerry,Baptiste Guyot,Igor de Maack,0-2,1,2021-10-13 00:00:00
-Igor de Maack,Stéphane Soulier,Baptiste Guyot,Christophe Jaulerry,0-2,1,2021-10-13 00:00:00
-Baptiste Lagaillardie,Stéphane Soulier,Antoine jeune,Aloïs de Bouville,2-0,1,2021-10-13 00:00:00
-Aloïs de Bouville,Baptiste Guyot,Christophe Jaulerry,Laurent Fiat,0-2,1,2021-10-13 00:00:00
-Aloïs de Bouville,Baptiste Guyot,Christophe Jaulerry,Laurent Fiat,0-1,.5,2021-10-13 00:00:00
-Olivier de Bernardi,Louis Babin,Éric Dupuy,Guillaume de Lamaze,0-2,1,2021-10-13 00:00:00
-Pierre-Henri Lajouane,Peio Lagrol,Adrien Chamberon,Gabriel Marot,2-0,1,2021-10-13 00:00:00
-Clément Bonnichon,Ramire Nunez,Arthur Capelier-Mourguy,Baptiste Lagaillardie,2-0,1,2021-10-14 00:00:00
-Clément Bonnichon,Ramire Nunez,Arthur Capelier-Mourguy,Baptiste Lagaillardie,2-1,1,2021-10-14 00:00:00
-Antoine Penin,Mathieu Leizagoyen,Olivier Waltener,Côme Saint-Pierre,0-2,1,2021-10-14 00:00:00
-Thibault Leguillon,Ramire Nunez,Jean-Luc Sallaberry,Charles Coustille,2-0,1,2021-10-14 00:00:00
-Sébastien Picabea,Clément Bonnichon,Loïc Harang,Mathieu Leizagoyen,0-2,1,2021-10-14 00:00:00
-Côme Saint-Pierre,Olivier Waltener,Antoine Penin,Rayann Sachs,2-0,1,2021-10-14 00:00:00
-Charles Coustille,Thibault Leguillon,Loïc Harang,Jean-Luc Sallaberry,1-2,1,2021-10-14 00:00:00
-Côme Saint-Pierre,Sébastien Picabea,Jean-Luc Sallaberry,Rayann Sachs,0-2,1,2021-10-14 00:00:00
-Olivier de Bernardi,Haroun Sachs,Christophe Jaulerry,Pierre Privat,2-1,1,2021-10-16 00:00:00
-Thibaud Babled,Alexandre Egurreguy,Baptiste Lagaillardie,Michel Lesueur,0-2,1,2021-10-16 00:00:00
-Olivier de Bernardi,Haroun Sachs,Arthur Schwarzbard,Pierre Privat,2-0,1,2021-10-16 00:00:00
-Baptiste Lagaillardie,Michel Lesueur,Alexandre Egurreguy,Christophe Jaulerry,2-0,1,2021-10-16 00:00:00
-Olivier de Bernardi,Pierre Privat,Arthur Schwarzbard,Thibaud Babled,1-2,1,2021-10-16 00:00:00
-Rayann Sachs,Olivier Waltener,Antoine Penin,Jean-Luc Sallaberry,2-0,1,2021-10-16 00:00:00
-Ramire Nunez,Hugues Saint-Pierre,Côme Saint-Pierre,Julien Jimenez,2-0,1,2021-10-16 00:00:00
-Rayann Sachs,Olivier Waltener,Georges Bachette-Peyrade,Jean-Luc Sallaberry,0-2,1,2021-10-16 00:00:00
-Côme Saint-Pierre,Antoine Penin,Ramire Nunez,Hugues Saint-Pierre,0-2,1,2021-10-16 00:00:00
-Jean-Luc Sallaberry,Georges Bachette-Peyrade,Hugues Saint-Pierre,Julien Jimenez,2-1,1,2021-10-16 00:00:00
-Hugues Saint-Pierre,Georges Bachette-Peyrade,Ramire Nunez,Jean-Luc Sallaberry,2-0,1,2021-10-16 00:00:00
+Thibault Martre,Charles Bachette-Peyrade,Baptiste Lagaillardie,Alexandre de la Raitrie,2-0,1.0,2021-09-19
+Olivier de Bernardi,Clément Bonnichon,Haroun Sachs,Thibault Leguillon,2-0,1.0,2021-09-20
+Haroun Sachs,Thibault Leguillon,Victor Lassalle,Guillaume de Lamaze,2-0,1.0,2021-09-20
+Michel Lesueur,Clément Bonnichon,Olivier de Bernardi,Emmanuel Poidevin,2-0,1.0,2021-09-20
+Victor Lassalle,Vincent Pasquesoone,Sébastien Picabea,Pierre Meglin,1-2,1.0,2021-09-20
+Michel Lesueur,Clément Bonnichon,Guillaume de Lamaze,Emmanuel Poidevin,2-1,1.0,2021-09-20
+Sébastien Picabea,Pierre Meglin,Olivier de Bernardi,Vincent Pasquesoone,2-0,1.0,2021-09-20
+Sébastien Picabea,Pierre Meglin,Olivier de Bernardi,Vincent Pasquesoone,2-0,1.0,2021-09-20
+Nicolas Ossard,Hugues Saint-Pierre,Georges Bachette-Peyrade,Jean-Luc Sallaberry,2-0,1.0,2021-09-21
+Côme Saint-Pierre,Michel Lesueur,Evhan Dijoux,Charles Coustille,2-1,1.0,2021-09-21
+Peio Mendiarat,Hugues Saint-Pierre,Charles Bachette-Peyrade,Olivier Waltener,2-0,1.0,2021-09-21
+Côme Saint-Pierre,Georges Bachette-Peyrade,Charles Bachette-Peyrade,Rodrigo de la Vega,2-1,1.0,2021-09-21
+Nicolas Ossard,Peio Mendiarat,Thibaud Babled,Evhan Dijoux,2-0,1.0,2021-09-21
+Aloïs de Bouville,Clément Bonnichon,Olivier Matteoli,Stéphane Vidaillet,2-1,1.0,2021-09-22
+Clément Bonnichon,Baptiste Guyot,Aloïs de Bouville,Stéphane Vidaillet,2-1,1.0,2021-09-22
+Clément Bonnichon,Baptiste Guyot,Aloïs de Bouville,Stéphane Vidaillet,2-1,1.0,2021-09-22
+Igor de Maack,Florent Bartoli,Olivier de Bernardi,Baptiste Guyot,0-2,1.0,2021-09-22
+Adrien Chamberon,Clément Bonnichon,Louis Babin,Stéphane Vidaillet,2-1,1.0,2021-09-22
+Olivier de Bernardi,Gabriel Marot,Dimitri Girardetti,Tancrède,2-0,1.0,2021-09-22
+Igor de Maack,Marco,Adrien Chamberon,Pierre-Henri Lajouane,2-0,1.0,2021-09-22
+Olivier de Bernardi,Gabriel Marot,Quentin Dionnot,Tancrède,0-2,1.0,2021-09-22
+Igor de Maack,Dimitri Girardetti,Olivier de Bernardi,Quentin Dionnot,2-1,1.0,2021-09-22
+Thibault Martre,Nicolas Ossard,Mathieu Leizagoyen,Evhan Dijoux,2-1,1.0,2021-09-23
+Thibault Martre,Nicolas Ossard,Jean-Luc Sallaberry,Evhan Dijoux,2-1,1.0,2021-09-23
+Bertrand Lebel,Olivier de Bernardi,Vincent Pasquesoone,Haroun Sachs,2-1,1.0,2021-09-25
+Olivier Waltener,Olivier de Bernardi,Vincent Pasquesoone,Haroun Sachs,2-0,1.0,2021-09-25
+Arthur Schwarzbard,Olivier Waltener,Bertrand Lebel,Vincent Pasquesoone,2-0,1.0,2021-09-25
+Jean-Luc Sallaberry,Georges Bachette-Peyrade,Baptiste Lagaillardie,Alexandre de la Raitrie,2-1,1.0,2021-09-26
+Côme Saint-Pierre,Hugues Saint-Pierre,Nicolas Ossard,Charles Coustille,2-0,1.0,2021-09-26
+Haroun Sachs,Alexandre de la Raitrie,Guillaume de Lamaze,Baptiste Lagaillardie,1-2,1.0,2021-09-27
+Olivier de Bernardi,Alexandre de la Raitrie,Michel Lesueur,Emmanuel Poidevin,1-2,1.0,2021-09-27
+Sébastien Picabea,Thibaud Babled,Clément Bonnichon,Mathieu Leizagoyen,0-2,1.0,2021-09-27
+Haroun Sachs,Baptiste Lagaillardie,Pierre Meglin,Vincent Pasquesoone,2-0,1.0,2021-09-27
+Olivier de Bernardi,Emmanuel Poidevin,Guillaume de Lamaze,Sébastien Picabea,1-2,1.0,2021-09-27
+Arthur Capelier-Mourguy,Thibault Martre,Julien Jimenez,Baptiste Lagaillardie,0-1,0.5,2021-09-28
+Thibault Martre,Julien Jimenez,Baptiste Lagaillardie,Georges Bachette-Peyrade,2-0,1.0,2021-09-28
+Evhan Dijoux,Hugues Saint-Pierre,Michel Lesueur,Côme Saint-Pierre,0-2,1.0,2021-09-28
+Thibault Martre,Charles Coustille,Georges Bachette-Peyrade,Peio Mendiarat,2-0,1.0,2021-09-28
+Côme Saint-Pierre,Julien Jimenez,Jean-Luc Sallaberry,Hugues Saint-Pierre,2-0,1.0,2021-09-28
+Peio Mendiarat,Georges Bachette-Peyrade,Charles Coustille,Evhan Dijoux,1-2,1.0,2021-09-28
+Peio Mendiarat,Côme Saint-Pierre,Jean-Luc Sallaberry,Hugues Saint-Pierre,2-0,1.0,2021-09-28
+Jean-Dominique Daragnes,Nicolas Robuchon,Baptiste Lagaillardie,Axel Bonneville,2-0,1.0,2021-09-29
+Jean-Dominique Daragnes,Axel Bonneville,Nicolas Robuchon,Baptiste Lagaillardie,2-0,1.0,2021-09-29
+Laurent Fiat,Baptiste Lagaillardie,Jean-Dominique Daragnes,Axel Bonneville,1-2,1.0,2021-09-29
+Igor de Maack,Aloïs de Bouville,Dimitri Girardetti,Jean-Philippe Louis,2-0,1.0,2021-09-29
+Baptiste Guyot,Guillaume de Lamaze,Laurent Fiat,Jean-Dominique Daragnes,2-1,1.0,2021-09-29
+Baptiste Lagaillardie,Clément Bonnichon,Axel Bonneville,Nicolas Robuchon,2-0,1.0,2021-09-29
+Florent Bartoli,Olivier de Bernardi,Victor Lassalle,Igor de Maack,0-2,1.0,2021-09-29
+Aloïs de Bouville,Baptiste Guyot,Dimitri Girardetti,Nicolas Robuchon,2-0,1.0,2021-09-29
+Louis Babin,Clément Bonnichon,Adrien Chamberon,Laurent Fiat,2-1,1.0,2021-09-29
+Florent Bartoli,Olivier de Bernardi,Éric Dupuy,Gabriel Marot,2-0,1.0,2021-09-29
+Adrien Chamberon,Jean-Philippe Louis,Victor Lassalle,Louis Babin,0-2,1.0,2021-09-29
+Florent Bartoli,Olivier de Bernardi,Éric Dupuy,Gabriel Marot,1-2,1.0,2021-09-29
+Gabriel Marot,Adrien Chamberon,Jean-Philippe Louis,Louis Babin,2-1,1.0,2021-09-29
+Olivier de Bernardi,Victor Lassalle,Florent Bartoli,Éric Dupuy,2-0,1.0,2021-09-29
+Evhan Dijoux,Thibault Leguillon,Thibault Martre,Michel Lesueur,0-2,1.0,2021-09-30
+Côme Saint-Pierre,Evhan Dijoux,Hugues Saint-Pierre,Thibault Martre,2-0,1.0,2021-09-30
+Sébastien Picabea,Michel Lesueur,Loïc Harang,Maximilien,2-0,1.0,2021-09-30
+Loïc Harang,Côme Saint-Pierre,Mathieu Leizagoyen,Evhan Dijoux,2-0,1.0,2021-09-30
+Côme Saint-Pierre,Sébastien Picabea,Evhan Dijoux,Mathieu Leizagoyen,2-0,1.0,2021-09-30
+Côme Saint-Pierre,Sébastien Picabea,Evhan Dijoux,Mathieu Leizagoyen,1-0,0.5,2021-09-30
+Dimitri Girardetti,Jean-Dominique Daragnes,Stéphane Vidaillet,Arthur Capelier-Mourguy,0-2,1.0,2021-10-01
+Dimitri Girardetti,Jean-Dominique Daragnes,Stéphane Vidaillet,Arthur Capelier-Mourguy,2-1,1.0,2021-10-01
+Aloïs de Bouville,Arthur Capelier-Mourguy,Stéphane Vidaillet,Jean-Dominique Daragnes,0-2,1.0,2021-10-01
+Clément Bonnichon,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,2-0,1.0,2021-10-01
+Clément Bonnichon,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,0-1,0.5,2021-10-01
+Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,2-0,1.0,2021-10-01
+Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Jean-Dominique Daragnes,0-2,1.0,2021-10-01
+Bertrand Lebel,Olivier de Bernardi,Haroun Sachs,Thibaud Babled,2-0,1.0,2021-10-02
+Olivier Waltener,Michel Lesueur,Éric Dupuy,Vincent Pasquesoone,2-1,1.0,2021-10-02
+Haroun Sachs,Thibaud Babled,Olivier de Bernardi,Bertrand Lebel,0-2,1.0,2021-10-02
+Vincent Pasquesoone,Éric Dupuy,Michel Lesueur,Thibault Leguillon,0-2,1.0,2021-10-02
+Olivier Waltener,Bertrand Lebel,Olivier de Bernardi,Thibaud Babled,2-0,1.0,2021-10-02
+Olivier Waltener,Thibault Leguillon,Michel Lesueur,Vincent Pasquesoone,2-0,1.0,2021-10-02
+Côme Saint-Pierre,Hugues Saint-Pierre,Pilotari1,Pilotari2,2-0,1.0,2021-10-02
+Ramire Nunez,Evhan Dijoux,Pilotari1,Pilotari2,2-0,1.0,2021-10-03
+Éric Edwards,Arthur Capelier-Mourguy,Clément Bonnichon,Bertrand Lebel,2-0,1.0,2021-10-04
+Éric Edwards,Lawrence Robert,Clément Bonnichon,Bertrand Lebel,2-1,1.0,2021-10-04
+Clément Bonnichon,Lawrence Robert,Bertrand Lebel,Michel Lesueur,2-0,1.0,2021-10-04
+Emmanuel Poidevin,Thibault Leguillon,Éric Dupuy,Sébastien Picabea,2-1,1.0,2021-10-04
+Olivier de Bernardi,Clément Bonnichon,Victor Lassalle,Thibault Leguillon,2-0,1.0,2021-10-04
+Guillaume de Lamaze,Sébastien Picabea,Pierre Meglin,Vincent Pasquesoone,2-1,1.0,2021-10-04
+Quentin Dionnot,Emmanuel Poidevin,Olivier de Bernardi,Victor Lassalle,2-0,1.0,2021-10-04
+Sébastien Picabea,Guillaume de Lamaze,Vincent Pasquesoone,Pierre Meglin,2-0,1.0,2021-10-04
+Michel Lesueur,Côme Saint-Pierre,Thibault Martre,Julien Jimenez,2-1,1.0,2021-10-05
+Antoine Penin,Georges Bachette-Peyrade,Olivier Waltener,Hugues Saint-Pierre,1-2,1.0,2021-10-05
+Evhan Dijoux,Ramire Nunez,Nicolas Ossard,Charles Coustille,2-0,1.0,2021-10-05
+Thibault Martre,Georges Bachette-Peyrade,Côme Saint-Pierre,Peio Mendiarat,2-1,1.0,2021-10-05
+Olivier Waltener,Rayann Sachs,Evhan Dijoux,Ramire Nunez,2-1,1.0,2021-10-05
+Thibault Martre,Rayann Sachs,Peio Mendiarat,Côme Saint-Pierre,0-2,1.0,2021-10-05
+Arthur Capelier-Mourguy,Aloïs de Bouville,Baptiste Lagaillardie,Baptiste Guyot,1-2,1.0,2021-10-06
+Clément Bonnichon,Aloïs de Bouville,Jean-Philippe Louis,Baptiste Lagaillardie,2-0,1.0,2021-10-06
+Stéphane Soulier,Hugues Dupuy,Louis Babin,Florent Bartoli,2-1,1.0,2021-10-06
+Clément Bonnichon,Baptiste Guyot,Jean-Philippe Louis,Aloïs de Bouville,2-0,1.0,2021-10-06
+Olivier de Bernardi,Stéphane Soulier,Florent Bartoli,Gabriel Marot,2-0,1.0,2021-10-06
+Arthur Capelier-Mourguy,Gabriel Marot,Olivier de Bernardi,Louis Babin,2-1,1.0,2021-10-06
+Florent Bartoli,Gabriel Marot,Louis Babin,Stéphane Soulier,0-2,1.0,2021-10-06
+Florent Bartoli,Gabriel Marot,Louis Babin,Stéphane Soulier,2-1,1.0,2021-10-06
+Arthur Capelier-Mourguy,Gabriel Marot,Louis Babin,Adrien Chamberon,2-0,1.0,2021-10-06
+Arthur Capelier-Mourguy,Adrien Chamberon,Gabriel Marot,Louis Babin,2-0,1.0,2021-10-06
+Arthur Capelier-Mourguy,Louis Babin,Adrien Chamberon,Gabriel Marot,2-0,1.0,2021-10-06
+Arthur Capelier-Mourguy,Antoine Penin,Baptiste Lagaillardie,Michel Lesueur,1-2,1.0,2021-10-07
+Olivier Waltener,Mathieu Leizagoyen,Michel Lesueur,Evhan Dijoux,0-2,1.0,2021-10-07
+Thibault Martre,Baptiste Lagaillardie,Côme Saint-Pierre,Bruno Saint-Pierre,2-0,1.0,2021-10-07
+Clément Bonnichon,Evhan Dijoux,Olivier Waltener,Mathieu Leizagoyen,2-1,1.0,2021-10-07
+Thibault Martre,Evhan Dijoux,Clément Bonnichon,Côme Saint-Pierre,2-1,1.0,2021-10-07
+Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Guillaume de Lamaze,0-2,1.0,2021-10-08
+Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1.0,2021-10-08
+Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,2-0,1.0,2021-10-08
+Guillaume de Lamaze,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1.0,2021-10-08
+Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,0-2,1.0,2021-10-08
+Arthur Capelier-Mourguy,Aloïs de Bouville,Stéphane Vidaillet,Éric Dupuy,2-0,1.0,2021-10-08
+Olivier de Bernardi,Haroun Sachs,Bertrand Lebel,Hugo Houplain,0-2,1.0,2021-10-09
+Michel Lesueur,Bertrand Lebel,Haroun Sachs,Vincent Pasquesoone,2-0,1.0,2021-10-09
+Michel Lesueur,Hugo Houplain,Olivier de Bernardi,Thibaud Babled,1-2,1.0,2021-10-09
+Christophe Jaulerry,Vincent Pasquesoone,Bertrand Lebel,Éric Dupuy,2-0,1.0,2021-10-09
+Vincent Pasquesoone,Éric Dupuy,Olivier de Bernardi,Thibaud Babled,1-2,1.0,2021-10-09
+Vincent Pasquesoone,Éric Dupuy,Olivier de Bernardi,Thibaud Babled,0-1,0.5,2021-10-09
+Thibaud Babled,Christophe Jaulerry,Éric Dupuy,Olivier de Bernardi,1-0,0.5,2021-10-09
+Thibaud Babled,Christophe Jaulerry,Éric Dupuy,Olivier de Bernardi,0-1,0.5,2021-10-09
+Peio Mendiarat,Arthur Capelier-Mourguy,Antoine Penin,Julien Jimenez,1-2,1.0,2021-10-09
+Peio Mendiarat,Jean-Luc Sallaberry,Antoine Penin,Julien Jimenez,2-1,1.0,2021-10-09
+Julien Jimenez,Arthur Capelier-Mourguy,Jean-Luc Sallaberry,Antoine Penin,1-2,1.0,2021-10-09
+Julien Jimenez,Arthur Capelier-Mourguy,Jean-Luc Sallaberry,Antoine Penin,2-0,1.0,2021-10-09
+Côme Saint-Pierre,Hugues Saint-Pierre,Ramire Nunez,Evhan Dijoux,2-0,1.0,2021-10-10
+Pilotari1,Pilotari2,Olivier Waltener,Charles Coustille,2-0,1.0,2021-10-10
+Jean-Marc Lanusse,Lawrence Robert,Clément Bonnichon,Éric Edwards,0-2,1.0,2021-10-11
+Michel Lesueur,Guillaume de Lamaze,Clément Bonnichon,Éric Edwards,0-2,1.0,2021-10-11
+Jean-Marc Lanusse,Lawrence Robert,Olivier de Bernardi,Sébastien Picabea,2-1,1.0,2021-10-11
+Olivier de Bernardi,Sébastien Picabea,Clément Bonnichon,Guillaume de Lamaze,2-1,1.0,2021-10-11
+Victor Lassalle,Thibaud Babled,Emmanuel Poidevin,Hugo Houplain,2-0,1.0,2021-10-11
+Olivier de Bernardi,Axel Bonneville,Quentin Dionnot,Sébastien Picabea,1-2,1.0,2021-10-11
+Victor Lassalle,Thibaud Babled,Emmanuel Poidevin,Hugo Houplain,2-1,1.0,2021-10-11
+Quentin Dionnot,Olivier de Bernardi,Axel Bonneville,Victor Lassalle,2-0,1.0,2021-10-11
+Côme Saint-Pierre,Michel Lesueur,Antoine Penin,Ramire Nunez,2-0,1.0,2021-10-12
+Côme Saint-Pierre,Antoine Penin,Jean-Luc Sallaberry,Ramire Nunez,2-1,1.0,2021-10-12
+Jean-Luc Sallaberry,Côme Saint-Pierre,Georges Bachette-Peyrade,Ramire Nunez,2-1,1.0,2021-10-12
+Aloïs de Bouville,Arthur Capelier-Mourguy,Baptiste Lagaillardie,Antoine jeune,1-0,0.5,2021-10-13
+Aloïs de Bouville,Baptiste Guyot,Baptiste Lagaillardie,Antoine jeune,2-1,1.0,2021-10-13
+Aloïs de Bouville,Christophe Jaulerry,Baptiste Guyot,Igor de Maack,0-2,1.0,2021-10-13
+Igor de Maack,Stéphane Soulier,Baptiste Guyot,Christophe Jaulerry,0-2,1.0,2021-10-13
+Baptiste Lagaillardie,Stéphane Soulier,Antoine jeune,Aloïs de Bouville,2-0,1.0,2021-10-13
+Aloïs de Bouville,Baptiste Guyot,Christophe Jaulerry,Laurent Fiat,0-2,1.0,2021-10-13
+Aloïs de Bouville,Baptiste Guyot,Christophe Jaulerry,Laurent Fiat,0-1,0.5,2021-10-13
+Olivier de Bernardi,Louis Babin,Éric Dupuy,Guillaume de Lamaze,0-2,1.0,2021-10-13
+Pierre-Henri Lajouane,Peio Lagrolet,Adrien Chamberon,Gabriel Marot,2-0,1.0,2021-10-13
+Clément Bonnichon,Ramire Nunez,Arthur Capelier-Mourguy,Baptiste Lagaillardie,2-0,1.0,2021-10-14
+Clément Bonnichon,Ramire Nunez,Arthur Capelier-Mourguy,Baptiste Lagaillardie,2-1,1.0,2021-10-14
+Antoine Penin,Mathieu Leizagoyen,Olivier Waltener,Côme Saint-Pierre,0-2,1.0,2021-10-14
+Thibault Leguillon,Ramire Nunez,Jean-Luc Sallaberry,Charles Coustille,2-0,1.0,2021-10-14
+Sébastien Picabea,Clément Bonnichon,Loïc Harang,Mathieu Leizagoyen,0-2,1.0,2021-10-14
+Côme Saint-Pierre,Olivier Waltener,Antoine Penin,Rayann Sachs,2-0,1.0,2021-10-14
+Charles Coustille,Thibault Leguillon,Loïc Harang,Jean-Luc Sallaberry,1-2,1.0,2021-10-14
+Côme Saint-Pierre,Sébastien Picabea,Jean-Luc Sallaberry,Rayann Sachs,0-2,1.0,2021-10-14
+Olivier de Bernardi,Haroun Sachs,Christophe Jaulerry,Pierre Privat,2-1,1.0,2021-10-16
+Thibaud Babled,Alexandre Egurreguy,Baptiste Lagaillardie,Michel Lesueur,0-2,1.0,2021-10-16
+Olivier de Bernardi,Haroun Sachs,Arthur Schwarzbard,Pierre Privat,2-0,1.0,2021-10-16
+Baptiste Lagaillardie,Michel Lesueur,Alexandre Egurreguy,Christophe Jaulerry,2-0,1.0,2021-10-16
+Olivier de Bernardi,Pierre Privat,Arthur Schwarzbard,Thibaud Babled,1-2,1.0,2021-10-16
+Rayann Sachs,Olivier Waltener,Antoine Penin,Jean-Luc Sallaberry,2-0,1.0,2021-10-16
+Ramire Nunez,Hugues Saint-Pierre,Côme Saint-Pierre,Julien Jimenez,2-0,1.0,2021-10-16
+Rayann Sachs,Olivier Waltener,Georges Bachette-Peyrade,Jean-Luc Sallaberry,0-2,1.0,2021-10-16
+Côme Saint-Pierre,Antoine Penin,Ramire Nunez,Hugues Saint-Pierre,0-2,1.0,2021-10-16
+Jean-Luc Sallaberry,Georges Bachette-Peyrade,Hugues Saint-Pierre,Julien Jimenez,2-1,1.0,2021-10-16
+Hugues Saint-Pierre,Georges Bachette-Peyrade,Ramire Nunez,Jean-Luc Sallaberry,2-0,1.0,2021-10-16
+Arthur Capelier-Mourguy,Jacques Guerin,Clément Bonnichon,Haroun Sachs,2-0,1.0,2021-10-18
+Lawrence Robert,Jean-Marc Lanusse,Éric Edwards,Michel Lesueur,1-2,1.0,2021-10-18
+Sébastien Picabea,Olivier de Bernardi,Vincent Pasquesoone,Pierre Meglin,2-1,1.0,2021-10-18
+Arthur Capelier-Mourguy,Antoine Penin,Baptiste Lagaillardie,Michel Lesueur,2-1,1.0,2021-10-19
+Ramire Nunez,Julien Jimenez,Evhan Dijoux,Michel Lesueur,2-1,1.0,2021-10-19
+Thibault Martre,Alexandre de la Raitrie,Peio Mendiarat,Charles Coustille,2-0,1.0,2021-10-19
+Ramire Nunez,Julien Jimenez,Evhan Dijoux,Charles Coustille,2-1,1.0,2021-10-19
+Thibault Martre,Peio Mendiarat,Ramire Nunez,Evhan Dijoux,2-1,1.0,2021-10-19
+Arthur Capelier-Mourguy,Florent Bartoli,Aloïs de Bouville,Stéphane Soulier,2-0,1.0,2021-10-20
+Arthur Capelier-Mourguy,Florent Bartoli,Aloïs de Bouville,Stéphane Soulier,2-1,1.0,2021-10-20
+Arthur Capelier-Mourguy,Florent Bartoli,Olivier de Bernardi,Stéphane Soulier,2-0,1.0,2021-10-20
+Arthur Capelier-Mourguy,Florent Bartoli,Olivier de Bernardi,Stéphane Soulier,1-2,1.0,2021-10-20
+Gabriel Marot,Louis Babin,Florent Bartoli,Stéphane Soulier,2-1,1.0,2021-10-20
+Gabriel Marot,Louis Babin,Pierre Chamberon,Peio Lagrolet,1-2,1.0,2021-10-20
+Pierre Chamberon,Peio Lagrolet,Quentin Dionnot,Axel Bonneville,2-0,1.0,2021-10-20
+Gabriel Marot,Louis Babin,Quentin Dionnot,Axel Bonneville,0-2,1.0,2021-10-20
+Gabriel Marot,Louis Babin,Pierre Chamberon,Peio Lagrolet,0-2,1.0,2021-10-20
+Arthur Capelier-Mourguy,Antoine Penin,Baptiste Lagaillardie,Michel Lesueur,0-2,1.0,2021-10-20
+Thibault Martre,Michel Lesueur,Olivier Waltener,Antoine Penin,2-0,1.0,2021-10-20
+Baptiste Lagaillardie,Côme Saint-Pierre,Thibault Martre,Hugues Saint-Pierre,2-1,1.0,2021-10-21
+Victor Lassalle,Sébastien Picabea,Olivier Waltener,Charles Coustille,2-0,1.0,2021-10-21
+Thibault Martre,Sébastien Picabea,Charles Coustille,Antoine Penin,2-1,1.0,2021-10-21 00:00:00
+Olivier Waltener,Antoine Penin,Victor Lassalle,Rayann Sachs,2-1,1.0,2021-10-21 00:00:00
+Arthur Capelier-Mourguy,Sébastien Picabea,Rayann Sachs,Thibaud Babled,0-2,1.0,2021-10-21 00:00:00
+Sébastien Picabea,Thibaud Babled,Victor Lassalle,Rayann Sachs,0-2,1.0,2021-10-21 00:00:00
