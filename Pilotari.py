@@ -16,7 +16,7 @@ class Pilotari(object):
             club_players = pd.read_csv(filename)
             player_info = club_players[club_players["Name"] == name]
             # If player exists, get info
-            if len(player_info):
+            if not player_info.empty:
                 player_exists = True
                 self.name = name
                 self.category = player_info["Category"]
@@ -54,7 +54,7 @@ class Pilotari(object):
         # Is player an active member? (for club ranking displays)
         member = None
         while member not in ["oui", "non"]:
-            member = input(name + "est-il membre actif du club ? (oui/non) ")
+            member = input(name + " est membre actif.ve du club ? (oui/non) ")
         self.member = member == "oui"
         # If filename provided, save player at the end of file
         if filename:

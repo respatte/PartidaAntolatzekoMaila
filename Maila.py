@@ -13,10 +13,10 @@ class Maila(object):
         self.games_file = games_file
         self.games = pd.read_csv(games_file)
     
-    def add_game(self, verbose = True):
+    def add_game(self, mode = "duo", verbose = True):
         """Add a game to the database and update player PAMs."""
         # Gather game information
-        (mode, game_date, players, score, weight) = self.gather_game_info()
+        (game_date, players, score, weight) = self.gather_game_info()
         # Save game information to database
         if mode == "duo":
             game_info = [players[team][p].name for team in players
@@ -28,24 +28,23 @@ class Maila(object):
         game_info.append(weight)
         game_info.append(game_date)
         self.games.loc[len(self.games.index)] = game_info
-        self.games.to_csv(self.games_file, index = False)
+        #self.games.to_csv(self.games_file, index = False)
+        # TODO: add save function on exit
         # Update player PAMs based on game
         PAMs_update = self.update_PAM(mode, players, score, float(weight))
         if verbose:
             print("Points changed by", max(PAMs_update))
         if mode == "duo":
             for p in range(2):
-                players["Team 1"][p].pam_duo += PAMs_update[0]
-                players["Team 2"][p].pam_duo += PAMs_update[1]
+                player_name = players["Team 1"][p].Name
+                self.players.loc[self.players["Name"] == player_name, "PAM_duo"] += PAMs_update[0]
+                player_name = players["Team 2"][p].Name
+                self.players.loc[self.players["Name"] == player_name, "PAM_duo"] += PAMs_update[1]
         else:
-            players["Team 1"][0].pam_solo += PAMs_update[0]
-            players["Team 2"][0].pam_solo += PAMs_update[1]
-        for team in players:
-            for p in range(2):
-                try:
-                    players[team][p].save_player(self.players_file)
-                except IndexError:
-                    pass
+            player_name = players["Team 1"][0].Name
+            self.players.loc[self.players["Name"] == player_name, "PAM_solo"] += PAMs_update[0]
+            player_name = players["Team 2"][0].Name
+            self.players.loc[self.players["Name"] == player_name, "PAM_solo"] += PAMs_update[1]
     
     def visualise(self, vis_type = "classement"):
         """Display information about club players in various ways (plots and tables)."""
@@ -95,12 +94,9 @@ class Maila(object):
         if verbose:
             return saved_updates
     
-    def gather_game_info(self):
+    def gather_game_info(self, mode):
         """Gather information about a new game (console interface)."""
         # Define number of players in the game
-        mode = None
-        while not mode in ["duo", "solo"]:
-            mode = input("Mode de jeu (duo/solo) : ")
         if mode == "duo":
             n_players = 2
         elif mode == "solo":
@@ -112,8 +108,29 @@ class Maila(object):
         players = {"Team 1" : [], "Team 2" : []}
         for t, team in enumerate(players):
             for p in range(n_players):
-                player_name = input(f"Équipe {t+1}, joueur {p+1} : ")
-                players[team].append(Pilotari(player_name, self.players_file))
+                player_ok = False
+                while not player_ok:
+                    player_name = input(f"Équipe {t+1}, joueur {p+1} : ")
+                    player = self.players[self.players["Name"] == player_name]
+                    if not player.empty:
+                        players[team].append(player)
+                        player_ok = True
+                    else:
+                        create_new = input("Joueur non reconnu, créer un nouveau joueur ? (oui/non) ")
+                        if create_new == "non":
+                            continue
+                        else:
+                            new_player = Pilotari(player_name, self.players_file)
+                            player_info = [new_player.name]
+                            player_info.append(new_player.category)
+                            player_info.append(new_player.pam_solo)
+                            player_info.append(new_player.pam_duo)
+                            player_info.append(new_player.member)
+                            self.players.loc[len(self.players.index)] = player_info
+                            player = self.players[self.players["Name"] == player_name]
+                            players[team].append(player)
+                            player_ok = True
+                            
         # Ask for game weight (to account for special tournaments)
         weight = input("Poids de la partie (défaut 1) : ")
         if weight == "":
@@ -137,13 +154,13 @@ class Maila(object):
         d = 400
         # Get each team's PAM based on mode
         if mode == "duo":
-            PAMs = [(players["Team 1"][0].pam_duo +\
-                         players["Team 1"][1].pam_duo)/2,
-                    (players["Team 2"][0].pam_duo +\
-                         players["Team 2"][1].pam_duo)/2]
+            PAMs = [(players["Team 1"][0].PAM_duo +\
+                         players["Team 1"][1].PAM_duo)/2,
+                    (players["Team 2"][0].PAM_duo +\
+                         players["Team 2"][1].PAM_duo)/2]
         else:
-            PAMs = [players["Team 1"][0].pam_solo,
-                    players["Team 2"][0].pam_solo]
+            PAMs = [players["Team 1"][0].PAM_solo,
+                    players["Team 2"][0].PAM_solo]
         # Compute each team 1's result and prediction according to PAMs
         # Team 2's result and prediction is 1 - team 1's result and prediction
         predT1 = 1 / (1 + c**((PAMs[1] - PAMs[0])/d))
