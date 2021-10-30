@@ -4,30 +4,28 @@ import pandas as pd
 class Pilotari(object):
     """Class for a single player (pilotari)"""
     
-    def __init__(self, name, filename = None):
+    def __init__(self, name, filename = "pilotari_historio.csv"):
         """Initialise a player.
         
         Check if player present in database, else create a new one.
         
         """
-        # If filename specified, check if player exists
-        player_exists = False
-        if filename:
-            club_players = pd.read_csv(filename)
-            player_info = club_players[club_players["Name"] == name]
-            # If player exists, get info
-            if not player_info.empty:
-                player_exists = True
-                self.name = name
-                self.category = player_info["Category"]
-                self.pam_solo = float(player_info["PAM_solo"])
-                self.pam_duo = float(player_info["PAM_duo"])
-                self.member = player_info["Member"]
-        # If no filename or player not registered, create new player
-        if not player_exists:
+        # Check if player exists
+        club_players = pd.read_csv(filename)
+        player_info = club_players[club_players["Name"] == name]
+        # If player exists, get info
+        if not player_info.empty:
+            self.latest = max(player_info.Date)
+            self.player_info = player_info.loc[player_info.Date == self.latest]
+            self.name = name
+            self.category = self.player_info.loc[:,"Category"].tolist()[0]
+            self.pam_solo = float(self.player_info.loc[:,"PAM_solo"]).tolist()[0]
+            self.pam_duo = float(self.player_info.loc[:,"PAM_duo"]).tolist()[0]
+        # If player not registered, create new player
+        else:
             self.new_player(name, filename)
     
-    def new_player(self, name, filename):
+    def new_player(self, name):
         """Create a new player (console interface).
         
         If filename provided, save new player at the end of the file.
@@ -56,16 +54,9 @@ class Pilotari(object):
         while member not in ["oui", "non"]:
             member = input(name + " est membre actif.ve du club ? (oui/non) ")
         self.member = member == "oui"
-        # If filename provided, save player at the end of file
-        if filename:
-            player_info = [self.name,self.category,
-                           self.pam_solo,self.pam_duo,
-                           self.member]
-            player_line = ",".join(str(info) for info in player_info) + "\n"
-            with open(filename,"a") as myfile:
-                myfile.write(player_line)
     
-    def update_PAM(self, PAM, PAM_type, reset):
+    def update_PAM(self, PAM, PAM_type, date,
+                   reset):
         #TODO
         pass
     

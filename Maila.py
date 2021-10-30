@@ -37,17 +37,21 @@ class Maila(object):
             for p in range(2):
                 self.update_player(players["Team 1"][p],
                                    PAMs_update[0],
-                                   "PAM_duo")
+                                   "PAM_duo",
+                                   game_date)
                 self.update_player(players["Team 2"][p],
                                    PAMs_update[1],
-                                   "PAM_duo")
+                                   "PAM_duo",
+                                   game_date)
         else:
             self.update_player(players["Team 1"][0],
                                PAMs_update[0],
-                               "PAM_solo")
+                               "PAM_solo",
+                               game_date)
             self.update_player(players["Team 2"][0],
                                PAMs_update[1],
-                               "PAM_solo")
+                               "PAM_solo",
+                               game_date)
         # Save changes
         self.games.to_csv(self.games_file, index = False)
         self.players.to_csv(self.players_file, index = False)
@@ -72,7 +76,7 @@ class Maila(object):
                 PAM = 1200
             elif player.Category.tolist()[0] == "1A":
                 PAM = 1400
-            self.update_player(player, PAM, ("PAM_solo", "PAM_duo"))
+            self.update_player(player, PAM, ("PAM_solo", "PAM_duo"), absolute=True)
         #self.players.to_csv(self.players_file, index = False)
         # Replay games
         if verbose:
@@ -94,17 +98,21 @@ class Maila(object):
                 for p in range(2):
                     self.update_player(players["Team 1"][p],
                                        PAMs_update[0],
-                                       "PAM_duo")
+                                       "PAM_duo",
+                                       game.Date)
                     self.update_player(players["Team 2"][p],
                                        PAMs_update[1],
-                                       "PAM_duo")
+                                       "PAM_duo",
+                                       game.Date)
             else:
                 self.update_player(players["Team 1"][0],
                                    PAMs_update[0],
-                                   "PAM_solo")
+                                   "PAM_solo",
+                                   game.Date)
                 self.update_player(players["Team 2"][0],
                                    PAMs_update[1],
-                                   "PAM_solo")
+                                   "PAM_solo",
+                                   game.Date)
         self.players.to_csv(self.players_file, index = False)
         if verbose:
             return saved_updates
@@ -135,13 +143,16 @@ class Maila(object):
                         if create_new == "non":
                             continue
                         else:
-                            new_player = Pilotari(player_name, self.players_file)
+                            new_player = Pilotari(player_name)
                             player_info = [new_player.name]
                             player_info.append(new_player.category)
                             player_info.append(new_player.pam_solo)
                             player_info.append(new_player.pam_duo)
                             player_info.append(new_player.member)
                             self.players.loc[len(self.players.index)] = player_info
+                            self.players.sort_values(by = ["Member","Category", "Name"],
+                                                     ascending = [False, True, True],
+                                                     inplace = True, ignore_index=True)
                             player = self.players[self.players["Name"] == player_name]
                             players[team].append(player)
                             player_ok = True
@@ -187,7 +198,7 @@ class Maila(object):
                        k*(predT1-resT1)]
         return PAMs_update
     
-    def update_player(self, player, PAM, PAM_type, absolute = False):
+    def update_player(self, player, PAM, PAM_type, date, absolute = False):
         """"Update a given player's PAM, relative to previous PAM by default."""
         # If relative change, add initial PAM of correct type
         if not absolute:
@@ -199,8 +210,8 @@ class Maila(object):
         player_name = player.Name.tolist()[0]
         self.players.loc[self.players["Name"] == player_name, PAM_type] = PAM
         # Update player history
-        player = Pilotari(player_name, self.players_file)
-        player.update_PAM(PAM, PAM_type, reset = absolute)
+        player = Pilotari(player_name)
+        player.update_PAM(PAM, PAM_type, date, reset = absolute)
     
     def plot_violin(self):
         """Plot the distribution of player PAMs by club category."""
