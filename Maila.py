@@ -76,7 +76,8 @@ class Maila(object):
                 PAM = 1200
             elif player.Category.tolist()[0] == "1A":
                 PAM = 1400
-            self.update_player(player, PAM, ("PAM_solo", "PAM_duo"), absolute=True)
+            self.update_player(player, PAM, ("PAM_solo", "PAM_duo"),
+                               date = "2000-01-01", absolute=True)
         #self.players.to_csv(self.players_file, index = False)
         # Replay games
         if verbose:
@@ -208,10 +209,15 @@ class Maila(object):
                 PAM = [PAM + player[t].tolist()[0] for t in PAM_type]
         # Update club's player list
         player_name = player.Name.tolist()[0]
+        # Incerement/reset games counter
+        if absolute:
+            self.players.loc[self.players["Name"] == player_name, "Games"] = 0
+        else:
+            self.players.loc[self.players["Name"] == player_name, "Games"] += 1
         self.players.loc[self.players["Name"] == player_name, PAM_type] = PAM
-        # Update player history
-        player = Pilotari(player_name)
-        player.update_PAM(PAM, PAM_type, date, reset = absolute)
+        #TODO: Update player history
+        #player = Pilotari(player_name)
+        #player.update_PAM(PAM, PAM_type, date, reset = absolute)
     
     def plot_violin(self):
         """Plot the distribution of player PAMs by club category."""
@@ -235,11 +241,12 @@ class Maila(object):
         # Round PAM value for nicer display
         sorted_players = sorted_players.astype({"PAM_duo":int})
         # Select relevant columns
-        sorted_players = sorted_players[["Name", "Category", "PAM_duo"]]
+        sorted_players = sorted_players[["Name", "Category", "PAM_duo", "Games"]]
         # Make column names French
         sorted_players = sorted_players.rename(columns = {"Name" : "Joueur",
                                                           "Category" : "Série",
-                                                          "PAM_duo" : "PAM"})
+                                                          "PAM_duo" : "PAM",
+                                                          "Games" : "Parties jouées"})
         # Start index at 1 and change index name
         sorted_players.index += 1
         sorted_players.index.name = "Classement"
