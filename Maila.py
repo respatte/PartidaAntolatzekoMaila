@@ -28,7 +28,6 @@ class Maila(object):
         game_info.append(weight)
         game_info.append(game_date)
         self.games.loc[len(self.games.index)] = game_info
-        #self.games.to_csv(self.games_file, index = False)
         # TODO: add save function on exit
         # Update player PAMs based on game
         PAMs_update = self.update_PAM(mode, players, score, float(weight))
@@ -49,6 +48,9 @@ class Maila(object):
             self.update_player(players["Team 2"][0],
                                PAMs_update[1],
                                "PAM_solo")
+        # Save changes
+        self.games.to_csv(self.games_file, index = False)
+        self.players.to_csv(self.players_file, index = False)
     
     def visualise(self, vis_type = "classement"):
         """Display information about club players in various ways (plots and tables)."""
@@ -103,6 +105,7 @@ class Maila(object):
                 self.update_player(players["Team 2"][0],
                                    PAMs_update[1],
                                    "PAM_solo")
+        self.players.to_csv(self.players_file, index = False)
         if verbose:
             return saved_updates
     
