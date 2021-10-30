@@ -65,6 +65,10 @@ class Pilotari(object):
             with open(filename,"a") as myfile:
                 myfile.write(player_line)
     
+    def update_PAM(self, PAM, PAM_type, reset):
+        #TODO
+        pass
+    
     def save_player(self, filename):
         """Saves player information."""
         club_players = pd.read_csv(filename)

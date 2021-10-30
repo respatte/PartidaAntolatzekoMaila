@@ -36,15 +36,11 @@ class Maila(object):
             print("Points changed by", max(PAMs_update))
         if mode == "duo":
             for p in range(2):
-                player_name = players["Team 1"][p].Name
-                self.players.loc[self.players["Name"] == player_name, "PAM_duo"] += PAMs_update[0]
-                player_name = players["Team 2"][p].Name
-                self.players.loc[self.players["Name"] == player_name, "PAM_duo"] += PAMs_update[1]
+                self.update_player(players["Team 1"][p], PAMs_update[0])
+                self.update_player(players["Team 2"][p], PAMs_update[1])
         else:
-            player_name = players["Team 1"][0].Name
-            self.players.loc[self.players["Name"] == player_name, "PAM_solo"] += PAMs_update[0]
-            player_name = players["Team 2"][0].Name
-            self.players.loc[self.players["Name"] == player_name, "PAM_solo"] += PAMs_update[1]
+            self.update_player(players["Team 1"][0], PAMs_update[0])
+            self.update_player(players["Team 2"][0], PAMs_update[1])
     
     def visualise(self, vis_type = "classement"):
         """Display information about club players in various ways (plots and tables)."""
@@ -56,21 +52,27 @@ class Maila(object):
     def reinitialise(self, verbose = False):
         """Reinitialise all player PAMs (when updating the elo computations)."""
         # Reinitialise PAMs based on starting club category
-        self.players.loc[(self.players.Category == "2B"), ("PAM_solo","PAM_duo")] = 800
-        self.players.loc[(self.players.Category == "2A"), ("PAM_solo","PAM_duo")] = 1000
-        self.players.loc[(self.players.Category == "1B"), ("PAM_solo","PAM_duo")] = 1200
-        self.players.loc[(self.players.Category == "1A"), ("PAM_solo","PAM_duo")] = 1400
-        self.players.to_csv(self.players_file, index = False)
+        for i, player in self.players.iterrows():
+            if player.Category == "2B":
+                PAM = 800
+            elif player.Category == "2A":
+                PAM = 1000
+            elif player.Category == "1B":
+                PAM = 1200
+            elif player.Category == "1A":
+                PAM = 1400
+            self.update_player(player, PAM, ("PAM_solo", "PAM_duo"))
+        #self.players.to_csv(self.players_file, index = False)
         # Replay games
         if verbose:
             saved_updates = []
         for i, game in self.games.iterrows():
             # TODO: solo games (how are NAs coded ?)
             mode = "duo"
-            players = {"Team 1" : [Pilotari(game.T1P1, self.players_file),
-                                   Pilotari(game.T1P2, self.players_file)],
-                       "Team 2" : [Pilotari(game.T2P1, self.players_file),
-                                   Pilotari(game.T2P2, self.players_file)]}
+            players = {"Team 1" : [self.players.loc[self.players["Name"] == game.T1P1.tolist()[0],
+                                   self.players.loc[self.players["Name"] == game.T1P2.tolist()[0]],
+                       "Team 2" : [self.players.loc[self.players["Name"] == game.T2P1.tolist()[0],
+                                   self.players.loc[self.players["Name"] == game.T2P2.tolist()[0]]}
             score = self.str_to_score(game.Score)
             weight = float(game.Weight)
             PAMs_update = self.update_PAM(mode, players, score, weight)
@@ -79,18 +81,11 @@ class Maila(object):
                 print(i+2)
             if mode == "duo":
                 for p in range(2):
-                    players["Team 1"][p].pam_duo += PAMs_update[0]
-                    players["Team 2"][p].pam_duo += PAMs_update[1]
+                    self.update_player(players["Team 1"][p], PAMs_update[0])
+                    self.update_player(players["Team 2"][p], PAMs_update[1])
             else:
-                players["Team 1"][0].pam_solo += PAMs_update[0]
-                players["Team 2"][0].pam_solo += PAMs_update[1]
-            for team in players:
-                for p in range(2):
-                    try:
-                        players[team][p].save_player(self.players_file)
-                    except IndexError:
-                        pass
-        self.players = pd.read_csv(self.players_file)
+                self.update_player(players["Team 1"][0], PAMs_update[0])
+                self.update_player(players["Team 2"][0], PAMs_update[1])
         if verbose:
             return saved_updates
     
@@ -171,6 +166,21 @@ class Maila(object):
         PAMs_update = [k*(resT1-predT1),
                        k*(predT1-resT1)]
         return PAMs_update
+    
+    def update_player(self, player, PAM, PAM_type, absolute = False):
+        """"Update a given player's PAM, relative to previous PAM by default."""
+        # If relative change, add initial PAM of correct type
+        if not absolute:
+            try:
+                PAM += player[PAM_type]
+            except TypeError:
+                PAM = [PAM + player[t] for t in PAM_type]
+        # Update club's player list
+        player_name = player.Name.tolist()[0]
+        self.players.loc[self.players["Name"] == player_name, PAM_type] = PAM
+        # Update player history
+        player = Pilotari(player_name, self.players_file)
+        player.update_PAM(PAM, PAM_type, reset = absolute)
     
     def plot_violin(self):
         """Plot the distribution of player PAMs by club category."""
