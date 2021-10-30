@@ -16,13 +16,13 @@ class Maila(object):
     def add_game(self, mode = "duo", verbose = True):
         """Add a game to the database and update player PAMs."""
         # Gather game information
-        (game_date, players, score, weight) = self.gather_game_info()
+        (game_date, players, score, weight) = self.gather_game_info(mode)
         # Save game information to database
         if mode == "duo":
-            game_info = [players[team][p].name for team in players
+            game_info = [players[team][p].Name.tolist()[0] for team in players
                          for p in range(2)]
         else:
-            tmp = [players[team][0].name for team in players]
+            tmp = [players[team][0].Name.tolist()[0] for team in players]
             game_info = [tmp[0], None, tmp[1], None]
         game_info.append(self.scores_to_str(score))
         game_info.append(weight)
@@ -36,11 +36,19 @@ class Maila(object):
             print("Points changed by", max(PAMs_update))
         if mode == "duo":
             for p in range(2):
-                self.update_player(players["Team 1"][p], PAMs_update[0])
-                self.update_player(players["Team 2"][p], PAMs_update[1])
+                self.update_player(players["Team 1"][p],
+                                   PAMs_update[0],
+                                   "PAM_duo")
+                self.update_player(players["Team 2"][p],
+                                   PAMs_update[1],
+                                   "PAM_duo")
         else:
-            self.update_player(players["Team 1"][0], PAMs_update[0])
-            self.update_player(players["Team 2"][0], PAMs_update[1])
+            self.update_player(players["Team 1"][0],
+                               PAMs_update[0],
+                               "PAM_solo")
+            self.update_player(players["Team 2"][0],
+                               PAMs_update[1],
+                               "PAM_solo")
     
     def visualise(self, vis_type = "classement"):
         """Display information about club players in various ways (plots and tables)."""
@@ -69,10 +77,10 @@ class Maila(object):
         for i, game in self.games.iterrows():
             # TODO: solo games (how are NAs coded ?)
             mode = "duo"
-            players = {"Team 1" : [self.players.loc[self.players["Name"] == game.T1P1.tolist()[0],
-                                   self.players.loc[self.players["Name"] == game.T1P2.tolist()[0]],
-                       "Team 2" : [self.players.loc[self.players["Name"] == game.T2P1.tolist()[0],
-                                   self.players.loc[self.players["Name"] == game.T2P2.tolist()[0]]}
+            players = {"Team 1" : [self.players.loc[self.players["Name"] == game.T1P1.tolist()[0]],
+                                   self.players.loc[self.players["Name"] == game.T1P2.tolist()[0]]],
+                       "Team 2" : [self.players.loc[self.players["Name"] == game.T2P1.tolist()[0]],
+                                   self.players.loc[self.players["Name"] == game.T2P2.tolist()[0]]]}
             score = self.str_to_score(game.Score)
             weight = float(game.Weight)
             PAMs_update = self.update_PAM(mode, players, score, weight)
@@ -81,11 +89,19 @@ class Maila(object):
                 print(i+2)
             if mode == "duo":
                 for p in range(2):
-                    self.update_player(players["Team 1"][p], PAMs_update[0])
-                    self.update_player(players["Team 2"][p], PAMs_update[1])
+                    self.update_player(players["Team 1"][p],
+                                       PAMs_update[0],
+                                       "PAM_duo")
+                    self.update_player(players["Team 2"][p],
+                                       PAMs_update[1],
+                                       "PAM_duo")
             else:
-                self.update_player(players["Team 1"][0], PAMs_update[0])
-                self.update_player(players["Team 2"][0], PAMs_update[1])
+                self.update_player(players["Team 1"][0],
+                                   PAMs_update[0],
+                                   "PAM_solo")
+                self.update_player(players["Team 2"][0],
+                                   PAMs_update[1],
+                                   "PAM_solo")
         if verbose:
             return saved_updates
     
@@ -134,7 +150,7 @@ class Maila(object):
         tmp = input("Score pour l'équipe 1 (en sets, format S1-S2) : ").split("-")
         score = [int(sets) for sets in tmp]
         # Return players list, total scores, and number of sets
-        return (mode, game_date, players, score, weight)
+        return (game_date, players, score, weight)
     
     def scores_to_str(self, score):
         return f"{score[0]}-{score[1]}"
@@ -149,13 +165,13 @@ class Maila(object):
         d = 400
         # Get each team's PAM based on mode
         if mode == "duo":
-            PAMs = [(players["Team 1"][0].PAM_duo +\
-                         players["Team 1"][1].PAM_duo)/2,
-                    (players["Team 2"][0].PAM_duo +\
-                         players["Team 2"][1].PAM_duo)/2]
+            PAMs = [(players["Team 1"][0].PAM_duo.tolist()[0] +\
+                         players["Team 1"][1].PAM_duo.tolist()[0])/2,
+                    (players["Team 2"][0].PAM_duo.tolist()[0] +\
+                         players["Team 2"][1].PAM_duo.tolist()[0])/2]
         else:
-            PAMs = [players["Team 1"][0].PAM_solo,
-                    players["Team 2"][0].PAM_solo]
+            PAMs = [players["Team 1"][0].PAM_solo.tolist()[0],
+                    players["Team 2"][0].PAM_solo.tolist()[0]]
         # Compute each team 1's result and prediction according to PAMs
         # Team 2's result and prediction is 1 - team 1's result and prediction
         predT1 = 1 / (1 + c**((PAMs[1] - PAMs[0])/d))
@@ -171,10 +187,10 @@ class Maila(object):
         """"Update a given player's PAM, relative to previous PAM by default."""
         # If relative change, add initial PAM of correct type
         if not absolute:
-            try:
-                PAM += player[PAM_type]
-            except TypeError:
-                PAM = [PAM + player[t] for t in PAM_type]
+            if type(PAM_type) is str:
+                PAM += player[PAM_type].tolist()[0]
+            else:
+                PAM = [PAM + player[t].tolist()[0] for t in PAM_type]
         # Update club's player list
         player_name = player.Name.tolist()[0]
         self.players.loc[self.players["Name"] == player_name, PAM_type] = PAM
