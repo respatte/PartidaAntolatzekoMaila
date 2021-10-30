@@ -60,14 +60,15 @@ class Maila(object):
     def reinitialise(self, verbose = False):
         """Reinitialise all player PAMs (when updating the elo computations)."""
         # Reinitialise PAMs based on starting club category
-        for i, player in self.players.iterrows():
-            if player.Category == "2B":
+        for i, player_name in enumerate(self.players.Name.tolist()):
+            player = self.players.loc[self.players["Name"] == player_name]
+            if player.Category.tolist()[0] == "2B":
                 PAM = 800
-            elif player.Category == "2A":
+            elif player.Category.tolist()[0] == "2A":
                 PAM = 1000
-            elif player.Category == "1B":
+            elif player.Category.tolist()[0] == "1B":
                 PAM = 1200
-            elif player.Category == "1A":
+            elif player.Category.tolist()[0] == "1A":
                 PAM = 1400
             self.update_player(player, PAM, ("PAM_solo", "PAM_duo"))
         #self.players.to_csv(self.players_file, index = False)
@@ -77,10 +78,10 @@ class Maila(object):
         for i, game in self.games.iterrows():
             # TODO: solo games (how are NAs coded ?)
             mode = "duo"
-            players = {"Team 1" : [self.players.loc[self.players["Name"] == game.T1P1.tolist()[0]],
-                                   self.players.loc[self.players["Name"] == game.T1P2.tolist()[0]]],
-                       "Team 2" : [self.players.loc[self.players["Name"] == game.T2P1.tolist()[0]],
-                                   self.players.loc[self.players["Name"] == game.T2P2.tolist()[0]]]}
+            players = {"Team 1" : [self.players.loc[self.players["Name"] == game.T1P1],
+                                   self.players.loc[self.players["Name"] == game.T1P2]],
+                       "Team 2" : [self.players.loc[self.players["Name"] == game.T2P1],
+                                   self.players.loc[self.players["Name"] == game.T2P2]]}
             score = self.str_to_score(game.Score)
             weight = float(game.Weight)
             PAMs_update = self.update_PAM(mode, players, score, weight)
