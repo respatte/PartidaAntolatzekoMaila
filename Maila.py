@@ -77,8 +77,8 @@ class Maila(object):
             elif player.Category.tolist()[0] == "1A":
                 PAM = 1400
             self.update_player(player, PAM, ("PAM_solo", "PAM_duo"),
-                               date = "2000-01-01", absolute=True)
-        #self.players.to_csv(self.players_file, index = False)
+                               date = pd.to_datetime("01/01/1900", dayfirst = True),
+                               absolute=True)
         # Replay games
         if verbose:
             saved_updates = []
@@ -216,8 +216,8 @@ class Maila(object):
             self.players.loc[self.players["Name"] == player_name, "Games"] += 1
         self.players.loc[self.players["Name"] == player_name, PAM_type] = PAM
         #TODO: Update player history
-        #player = Pilotari(player_name)
-        #player.update_PAM(PAM, PAM_type, date, reset = absolute)
+        player = Pilotari(player_name)
+        player.update_PAM(PAM, date, reset = absolute)
     
     def plot_violin(self):
         """Plot the distribution of player PAMs by club category."""
