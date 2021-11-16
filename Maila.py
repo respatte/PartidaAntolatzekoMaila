@@ -147,9 +147,10 @@ class Maila(object):
                             new_player = Pilotari(player_name)
                             player_info = [new_player.name]
                             player_info.append(new_player.category)
-                            player_info.append(new_player.pam_solo)
-                            player_info.append(new_player.pam_duo)
+                            player_info.append(new_player.pam)
+                            player_info.append(new_player.pam)
                             player_info.append(new_player.member)
+                            player_info.append(0)
                             self.players.loc[len(self.players.index)] = player_info
                             self.players.sort_values(by = ["Member","Category", "Name"],
                                                      ascending = [False, True, True],
