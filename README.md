@@ -9,29 +9,29 @@ k = 30 * poids_partie
 ```
 
 ## Classement des joueurs
-Un classement des joueurs au 15 Novembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
+Un classement des joueurs au 16 Novembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
 
 |   Classement | Joueur                   | Série   |   PAM |   Parties jouées |
 |-------------:|:-------------------------|:--------|------:|-----------------:|
 |            1 | Côme Saint-Pierre        | 1A      |  1546 |               40 |
-|            2 | Thibault Martre          | 1A      |  1489 |               34 |
+|            2 | Thibault Martre          | 1A      |  1483 |               36 |
 |            3 | Hugues Saint-Pierre      | 1A      |  1437 |               28 |
-|            4 | Nicolas Ossard           | 1A      |  1429 |               10 |
-|            5 | Georges Bachette-Peyrade | 1A      |  1419 |               18 |
+|            4 | Ramire Nunez             | 1A      |  1433 |               23 |
+|            5 | Nicolas Ossard           | 1A      |  1429 |               10 |
 |            6 | Rayann Sachs             | 1A      |  1419 |               10 |
-|            7 | Ramire Nunez             | 1A      |  1396 |               20 |
+|            7 | Georges Bachette-Peyrade | 1A      |  1409 |               19 |
 |            8 | Julien Jimenez           | 1A      |  1376 |               18 |
 |            9 | Peio Mendiarat           | 1A      |  1373 |               15 |
-|           10 | Charles Bachette-Peyrade | 1A      |  1369 |                9 |
-|           11 | Jean-Luc Sallaberry      | 1A      |  1353 |               33 |
-|           12 | Olivier Waltener         | 1A      |  1333 |               40 |
-|           13 | Evhan Dijoux             | 1A      |  1322 |               38 |
-|           14 | Michel Lesueur           | 1B      |  1321 |               42 |
+|           10 | Evhan Dijoux             | 1A      |  1359 |               41 |
+|           11 | Charles Bachette-Peyrade | 1A      |  1356 |               12 |
+|           12 | Jean-Luc Sallaberry      | 1A      |  1341 |               36 |
+|           13 | Olivier Waltener         | 1A      |  1333 |               40 |
+|           14 | Michel Lesueur           | 1B      |  1321 |               44 |
 |           15 | Antoine Penin            | 1A      |  1270 |               19 |
-|           16 | Charles Coustille        | 1A      |  1246 |               20 |
-|           17 | Alexandre de la Raitrie  | 1B      |  1227 |               14 |
-|           18 | Mathieu Leizagoyen       | 1B      |  1224 |               15 |
-|           19 | Alexandre Egurreguy      | 1B      |  1222 |                9 |
+|           16 | Alexandre de la Raitrie  | 1B      |  1227 |               14 |
+|           17 | Mathieu Leizagoyen       | 1B      |  1224 |               15 |
+|           18 | Alexandre Egurreguy      | 1B      |  1222 |                9 |
+|           19 | Charles Coustille        | 1A      |  1222 |               22 |
 |           20 | Baptiste Lagaillardie    | 1B      |  1220 |               25 |
 |           21 | Mathieu Olhagaray        | 1B      |  1216 |                7 |
 |           22 | Loïc Harang              | 1B      |  1213 |                8 |
@@ -41,7 +41,7 @@ Un classement des joueurs au 15 Novembre 2021 est disponible ci-dessous. Attenti
 |           26 | Clément Bonnichon        | 1B      |  1195 |               37 |
 |           27 | Olivier de Bernardi      | 2A      |  1162 |               74 |
 |           28 | Thibaud Babled           | 1B      |  1159 |               36 |
-|           29 | Arthur Capelier-Mourguy  | 1B      |  1155 |               54 |
+|           29 | Arthur Capelier-Mourguy  | 1B      |  1145 |               55 |
 |           30 | Pierre Meglin            | 1B      |  1138 |               12 |
 |           31 | Vincent Pasquesoone      | 1B      |  1126 |               30 |
 |           32 | Victor Lassalle          | 1B      |  1102 |               37 |
