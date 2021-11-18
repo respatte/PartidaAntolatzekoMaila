@@ -9,7 +9,7 @@ k = 30 * poids_partie
 ```
 
 ## Classement des joueurs
-Un classement des joueurs au 16 Novembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
+Un classement des joueurs au 17 Novembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
 
 |   Classement | Joueur                   | Série   |   PAM |   Parties jouées |
 |-------------:|:-------------------------|:--------|------:|-----------------:|
@@ -34,40 +34,40 @@ Un classement des joueurs au 16 Novembre 2021 est disponible ci-dessous. Attenti
 |           19 | Charles Coustille        | 1A      |  1222 |               22 |
 |           20 | Baptiste Lagaillardie    | 1B      |  1220 |               25 |
 |           21 | Mathieu Olhagaray        | 1B      |  1216 |                7 |
-|           22 | Loïc Harang              | 1B      |  1213 |                8 |
-|           23 | Thibault Leguillon       | 1B      |  1206 |               11 |
-|           24 | Sébastien Picabea        | 1B      |  1203 |               25 |
+|           22 | Sébastien Picabea        | 1B      |  1214 |               28 |
+|           23 | Loïc Harang              | 1B      |  1213 |                8 |
+|           24 | Thibault Leguillon       | 1B      |  1206 |               11 |
 |           25 | Emmanuel Poidevin        | 1B      |  1200 |               12 |
 |           26 | Clément Bonnichon        | 1B      |  1195 |               37 |
-|           27 | Olivier de Bernardi      | 2A      |  1162 |               74 |
+|           27 | Olivier de Bernardi      | 2A      |  1187 |               78 |
 |           28 | Thibaud Babled           | 1B      |  1159 |               36 |
-|           29 | Arthur Capelier-Mourguy  | 1B      |  1145 |               55 |
+|           29 | Arthur Capelier-Mourguy  | 1B      |  1154 |               60 |
 |           30 | Pierre Meglin            | 1B      |  1138 |               12 |
 |           31 | Vincent Pasquesoone      | 1B      |  1126 |               30 |
 |           32 | Victor Lassalle          | 1B      |  1102 |               37 |
 |           33 | Guillaume de Lamaze      | 2A      |  1095 |               17 |
 |           34 | Éric Edwards             | 2A      |  1090 |               12 |
 |           35 | Jean-Dominique Daragnes  | 2A      |  1066 |               11 |
-|           36 | Lawrence Robert          | 2A      |  1041 |               11 |
+|           36 | Lawrence Robert          | 2A      |  1039 |               12 |
 |           37 | Hugo Houplain            | 2A      |  1019 |                9 |
-|           38 | Quentin Dionnot          | 2A      |  1008 |               19 |
+|           38 | Quentin Dionnot          | 2A      |  1014 |               21 |
 |           39 | Cyril Houplain           | 2A      |  1005 |                5 |
 |           40 | Alex Duthil              | 2A      |  1002 |                5 |
 |           41 | Stéphane Vidaillet       | 2A      |   989 |               40 |
 |           42 | Igor de Maack            | 2A      |   976 |               16 |
 |           43 | Pierre Privat            | 2A      |   971 |                6 |
 |           44 | Bertrand Lebel           | 2A      |   967 |               18 |
-|           45 | Laurent Fiat             | 2A      |   954 |               10 |
-|           46 | Dimitri Girardetti       | 2A      |   945 |               20 |
-|           47 | Éric Dupuy               | 2A      |   920 |               33 |
-|           48 | Baptiste Guyot           | 2B      |   918 |               14 |
+|           45 | Dimitri Girardetti       | 2A      |   945 |               20 |
+|           46 | Laurent Fiat             | 2A      |   922 |               15 |
+|           47 | Aloïs de Bouville        | 2B      |   920 |               42 |
+|           48 | Éric Dupuy               | 2A      |   920 |               33 |
 |           49 | Axel Bonneville          | 2A      |   914 |               15 |
 |           50 | Christophe Jaulerry      | 2B      |   894 |               21 |
 |           51 | Haroun Sachs             | 2A      |   892 |               27 |
-|           52 | Aloïs de Bouville        | 2B      |   883 |               36 |
+|           52 | Baptiste Guyot           | 2B      |   880 |               20 |
 |           53 | Peio Lagrolet            | 2B      |   870 |                6 |
 |           54 | Pierre Chamberon         | 2B      |   867 |                5 |
-|           55 | Jean-Marc Lanusse        | 2B      |   847 |                9 |
+|           55 | Jean-Marc Lanusse        | 2B      |   846 |               10 |
 |           56 | Guillaume Barnetche      | 2B      |   841 |                2 |
 |           57 | Jacques Guerin           | 2B      |   840 |                8 |
 |           58 | Hugues Dupuy             | 2B      |   814 |                1 |
