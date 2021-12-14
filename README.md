@@ -22,10 +22,10 @@ Un classement des joueurs au 3 Décembre 2021 est disponible ci-dessous. Attenti
 |            7 | Ramire Nunez             | 1A      |  1386 |               28 |
 |            8 | Peio Mendiarat           | 1A      |  1385 |               21 |
 |            9 | Georges Bachette-Peyrade | 1A      |  1383 |               21 |
-|           10 | Michel Lesueur           | 1B      |  1364 |               54 |
-|           11 | Evhan Dijoux             | 1A      |  1347 |               43 |
-|           12 | Charles Bachette-Peyrade | 1A      |  1346 |               15 |
-|           13 | Julien Jimenez           | 1A      |  1329 |               26 |
+|           10 | Evhan Dijoux             | 1A      |  1347 |               43 |
+|           11 | Charles Bachette-Peyrade | 1A      |  1346 |               15 |
+|           12 | Julien Jimenez           | 1A      |  1329 |               26 |
+|           13 | Michel Lesueur           | 1B      |  1313 |               56 |
 |           14 | Jean-Luc Sallaberry      | 1A      |  1312 |               41 |
 |           15 | Charles Coustille        | 1A      |  1276 |               28 |
 |           16 | Antoine Penin            | 1A      |  1255 |               21 |
@@ -38,14 +38,14 @@ Un classement des joueurs au 3 Décembre 2021 est disponible ci-dessous. Attenti
 |           23 | Alexandre Egurreguy      | 1B      |  1222 |                9 |
 |           24 | Emmanuel Poidevin        | 1B      |  1205 |               15 |
 |           25 | Baptiste Lagaillardie    | 1B      |  1187 |               29 |
-|           26 | Loïc Harang              | 1B      |  1149 |               12 |
-|           27 | Guillaume de Lamaze      | 2A      |  1148 |               28 |
-|           28 | Victor Lassalle          | 1B      |  1144 |               50 |
-|           29 | Clément Bonnichon        | 1B      |  1132 |               48 |
-|           30 | Pierre Meglin            | 1B      |  1119 |               18 |
+|           26 | Victor Lassalle          | 1B      |  1161 |               51 |
+|           27 | Pierre Meglin            | 1B      |  1153 |               21 |
+|           28 | Loïc Harang              | 1B      |  1149 |               12 |
+|           29 | Guillaume de Lamaze      | 2A      |  1148 |               28 |
+|           30 | Clément Bonnichon        | 1B      |  1099 |               51 |
 |           31 | Éric Edwards             | 2A      |  1090 |               12 |
-|           32 | Arthur Capelier-Mourguy  | 1B      |  1084 |               65 |
-|           33 | Olivier de Bernardi      | 2A      |  1080 |               93 |
+|           32 | Olivier de Bernardi      | 2A      |  1086 |               95 |
+|           33 | Arthur Capelier-Mourguy  | 1B      |  1084 |               65 |
 |           34 | Vincent Pasquesoone      | 1B      |  1078 |               27 |
 |           35 | Lawrence Robert          | 2A      |  1062 |               16 |
 |           36 | Peio Lagrolet            | 2B      |  1032 |               21 |
