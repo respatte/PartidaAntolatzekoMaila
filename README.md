@@ -9,7 +9,7 @@ k = 30 * poids_partie
 ```
 
 ## Classement des joueurs
-Un classement des joueurs au 3 Décembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
+Un classement des joueurs au 20 Décembre 2021 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
 
 |   Classement | Joueur                   | Série   |   PAM |   Parties jouées |
 |-------------:|:-------------------------|:--------|------:|-----------------:|
@@ -26,30 +26,30 @@ Un classement des joueurs au 3 Décembre 2021 est disponible ci-dessous. Attenti
 |           11 | Julien Jimenez           | 1A      |  1329 |               26 |
 |           12 | Charles Bachette-Peyrade | 1A      |  1321 |               19 |
 |           13 | Jean-Luc Sallaberry      | 1A      |  1316 |               44 |
-|           14 | Michel Lesueur           | 1B      |  1288 |               63 |
+|           14 | Michel Lesueur           | 1B      |  1305 |               65 |
 |           15 | Charles Coustille        | 1A      |  1272 |               30 |
-|           16 | Mathieu Leizagoyen       | 1B      |  1270 |               23 |
+|           16 | Thibaud Babled           | 1B      |  1260 |               47 |
 |           17 | Alexandre de la Raitrie  | 1B      |  1256 |               22 |
-|           18 | Thibaud Babled           | 1B      |  1250 |               44 |
+|           18 | Mathieu Leizagoyen       | 1B      |  1253 |               25 |
 |           19 | Alexandre Egurreguy      | 1B      |  1234 |               10 |
 |           20 | Antoine Penin            | 1A      |  1231 |               26 |
 |           21 | Mathieu Olhagaray        | 1B      |  1229 |                8 |
 |           22 | Sébastien Picabea        | 1B      |  1228 |               33 |
-|           23 | Emmanuel Poidevin        | 1B      |  1210 |               16 |
+|           23 | Emmanuel Poidevin        | 1B      |  1226 |               19 |
 |           24 | Thibault Leguillon       | 1B      |  1209 |               18 |
 |           25 | Baptiste Lagaillardie    | 1B      |  1201 |               30 |
-|           26 | Guillaume de Lamaze      | 2A      |  1164 |               29 |
-|           27 | Victor Lassalle          | 1B      |  1159 |               53 |
-|           28 | Pierre Meglin            | 1B      |  1153 |               21 |
-|           29 | Loïc Harang              | 1B      |  1149 |               12 |
-|           30 | Éric Edwards             | 2A      |  1090 |               12 |
-|           31 | Arthur Capelier-Mourguy  | 1B      |  1086 |               68 |
-|           32 | Clément Bonnichon        | 1B      |  1081 |               54 |
-|           33 | Vincent Pasquesoone      | 1B      |  1078 |               27 |
-|           34 | Olivier de Bernardi      | 2A      |  1076 |              103 |
-|           35 | Lawrence Robert          | 2A      |  1062 |               16 |
+|           26 | Pierre Meglin            | 1B      |  1175 |               23 |
+|           27 | Victor Lassalle          | 1B      |  1153 |               55 |
+|           28 | Loïc Harang              | 1B      |  1149 |               12 |
+|           29 | Guillaume de Lamaze      | 2A      |  1140 |               32 |
+|           30 | Arthur Capelier-Mourguy  | 1B      |  1098 |               69 |
+|           31 | Éric Edwards             | 2A      |  1090 |               12 |
+|           32 | Vincent Pasquesoone      | 1B      |  1078 |               27 |
+|           33 | Lawrence Robert          | 2A      |  1062 |               16 |
+|           34 | Clément Bonnichon        | 1B      |  1062 |               55 |
+|           35 | Olivier de Bernardi      | 2A      |  1052 |              108 |
 |           36 | Peio Lagrolet            | 2B      |  1032 |               21 |
-|           37 | Quentin Dionnot          | 2A      |  1006 |               21 |
+|           37 | Quentin Dionnot          | 2A      |  1026 |               24 |
 |           38 | Cyril Houplain           | 2A      |  1005 |                5 |
 |           39 | Hugo Houplain            | 2A      |  1003 |               12 |
 |           40 | Alex Duthil              | 2A      |  1002 |                5 |
@@ -58,7 +58,7 @@ Un classement des joueurs au 3 Décembre 2021 est disponible ci-dessous. Attenti
 |           43 | Stéphane Vidaillet       | 2A      |   979 |               47 |
 |           44 | Igor de Maack            | 2A      |   976 |               16 |
 |           45 | Jean-Dominique Daragnes  | 2A      |   974 |               16 |
-|           46 | Dimitri Girardetti       | 2A      |   958 |               22 |
+|           46 | Dimitri Girardetti       | 2A      |   950 |               27 |
 |           47 | Axel Bonneville          | 2A      |   914 |               15 |
 |           48 | Laurent Fiat             | 2A      |   913 |               17 |
 |           49 | Pierre Chamberon         | 2B      |   899 |               10 |
