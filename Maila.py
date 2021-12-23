@@ -12,6 +12,10 @@ class Maila(object):
         self.players = pd.read_csv(players_file)
         self.games_file = games_file
         self.games = pd.read_csv(games_file)
+        self.categories_PAM = {"1A" : 1400,
+                               "1B" : 1200,
+                               "2A" : 1000,
+                               "2B" : 800}
     
     def add_game(self, mode = "duo", verbose = True):
         """Add a game to the database and update player PAMs."""
@@ -68,14 +72,7 @@ class Maila(object):
         # Reinitialise PAMs based on starting club category
         for i, player_name in enumerate(self.players.Name.tolist()):
             player = self.players.loc[self.players["Name"] == player_name]
-            if player.Category.tolist()[0] == "2B":
-                PAM = 800
-            elif player.Category.tolist()[0] == "2A":
-                PAM = 1000
-            elif player.Category.tolist()[0] == "1B":
-                PAM = 1200
-            elif player.Category.tolist()[0] == "1A":
-                PAM = 1400
+            PAM = self.categories_PAM[player.Category.tolist()[0]]
             self.update_player(player, PAM, ("PAM_solo", "PAM_duo"),
                                date = pd.to_datetime("01/01/1900", dayfirst = True),
                                absolute=True)
@@ -169,6 +166,31 @@ class Maila(object):
         # Return players list, total scores, and number of sets
         return (game_date, players, score, weight)
     
+    def season_reset(self):
+        # Get season date
+        season_date = pd.to_datetime(input("Date de début de saison (JJ/MM/AA) : "),
+                                     dayfirst = True)
+        # Get list of member names
+        members = self.players.loc[self.players["Member"]==True,"Name"].tolist()
+        while True:
+            cat_change = input("Ajouter un changement de série ? (oui/non) ") == "oui"
+            if not cat_change:
+                break
+            player_ok = False
+            while not player_ok:
+                player_name = input("Joueur : ")
+                player_ok = player_name in self.players["Name"].values
+            player_cat = input("Nouvelle série : ")
+            self.players.loc[self.players["Name"] == player_name, "Category"] = player_cat
+        for player_name in members:
+            player = Pilotari(player_name)
+            player_cat = self.players.loc[self.players["Name"] == player_name,
+                                          "Category"].tolist()[0]
+            new_PAM = player.update_info(category = player_cat,
+                                         date = season_date)
+            self.players.loc[self.players["Name"] == player_name, "PAM_duo"] = new_PAM
+        #self.players.to_csv(self.players_file, index = False)
+    
     def scores_to_str(self, score):
         return f"{score[0]}-{score[1]}"
     
@@ -220,7 +242,7 @@ class Maila(object):
         player = Pilotari(player_name)
         player.update_PAM(PAM, date, reset = absolute)
     
-    def plot_violin(self):
+    def plot_violin(self):  
         """Plot the distribution of player PAMs by club category."""
         categories = ["2B", "2A", "1B", "1A"]
         for i, cat in enumerate(categories):

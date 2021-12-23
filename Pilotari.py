@@ -10,6 +10,11 @@ class Pilotari(object):
         Check if player present in database, else create a new one.
         
         """
+        # General information
+        self.categories_PAM = {"1A" : 1400,
+                               "1B" : 1200,
+                               "2A" : 1000,
+                               "2B" : 800}
         # Check if player exists
         self.name = name
         self.filename = "".join(["pilotari_historio/"] + name.split() + [".csv"])
@@ -38,14 +43,7 @@ class Pilotari(object):
         while category not in ["1A","1B","2A","2B"]:
             category = input("Catégorie club (1A/1B/2A/2B) pour " + self.name + " : ")
         self.category = category
-        if category == "2B":
-            self.pam = 800
-        elif category == "2A":
-            self.pam = 1000
-        elif category == "1B":
-            self.pam = 1200
-        else:
-            self.pam = 1400
+        self.pam = self.categories_PAM[category]
         # Is player an active member? (for club ranking displays)
         member = None
         while member not in ["oui", "non"]:
@@ -78,4 +76,16 @@ class Pilotari(object):
                                                            self.member,
                                                            date]
         self.player_info.to_csv(self.filename, index = False)
+    
+    def update_info(self, category = None, date = None, member = None):
+        """Change player category or membership status"""
+        if category:
+            self.category = category
+            old_PAM = self.latest_info.PAM.to_list()[0]
+            new_PAM = old_PAM + (self.categories_PAM[category] - old_PAM)/2
+            self.update_PAM(new_PAM, date, reset = False)
+            return(new_PAM)
+        if type(member) == bool:
+            self.player_info.loc[:,"Member"] = member
+            self.player_info.to_csv(self.filename, index = False)
             
