@@ -30,36 +30,36 @@ Un classement des joueurs au 9 Décembre 2022 est disponible ci-dessous. Attenti
 |           13 | Charles Coustille        | 1A      |  1345 |               30 |
 |           14 | Alexandre Egurreguy      | 1A      |  1317 |               10 |
 |           15 | Jean-Luc Sallaberry      | 1A      |  1312 |               48 |
-|           16 | Antoine Penin            | 1A      |  1287 |               28 |
-|           17 | Alexandre de la Raitrie  | 1B      |  1258 |               27 |
+|           16 | Alexandre de la Raitrie  | 1B      |  1290 |               29 |
+|           17 | Antoine Penin            | 1A      |  1287 |               28 |
 |           18 | Thibaud Babled           | 1B      |  1257 |               52 |
 |           19 | Mathieu Leizagoyen       | 1B      |  1230 |               25 |
-|           20 | Michel Lesueur           | 1B      |  1219 |               68 |
-|           21 | Mathieu Olhagaray        | 1B      |  1214 |                8 |
-|           22 | Thibault Leguillon       | 1B      |  1204 |               18 |
-|           23 | Pierre Meglin            | 1B      |  1203 |               25 |
-|           24 | Baptiste Lagaillardie    | 1B      |  1200 |               30 |
-|           25 | Loïc Harang              | 1B      |  1198 |               15 |
-|           26 | Emmanuel Poidevin        | 1B      |  1190 |               21 |
-|           27 | Sébastien Picabea        | 1B      |  1186 |               35 |
-|           28 | Victor Lassalle          | 1B      |  1180 |               58 |
-|           29 | Arthur Capelier-Mourguy  | 1B      |  1149 |               69 |
+|           20 | Mathieu Olhagaray        | 1B      |  1214 |                8 |
+|           21 | Thibault Leguillon       | 1B      |  1204 |               18 |
+|           22 | Loïc Harang              | 1B      |  1203 |               16 |
+|           23 | Baptiste Lagaillardie    | 1B      |  1200 |               30 |
+|           24 | Pierre Meglin            | 1B      |  1190 |               26 |
+|           25 | Sébastien Picabea        | 1B      |  1186 |               35 |
+|           26 | Michel Lesueur           | 1B      |  1179 |               70 |
+|           27 | Emmanuel Poidevin        | 1B      |  1177 |               22 |
+|           28 | Victor Lassalle          | 1B      |  1173 |               60 |
+|           29 | Arthur Capelier-Mourguy  | 1B      |  1169 |               70 |
 |           30 | Vincent Pasquesoone      | 1B      |  1139 |               27 |
-|           31 | Guillaume de Lamaze      | 1B      |  1134 |               34 |
-|           32 | Lawrence Robert          | 1B      |  1131 |               16 |
-|           33 | Clément Bonnichon        | 1B      |  1122 |               57 |
-|           34 | Olivier de Bernardi      | 2A      |  1055 |              115 |
+|           31 | Lawrence Robert          | 1B      |  1131 |               16 |
+|           32 | Clément Bonnichon        | 1B      |  1123 |               59 |
+|           33 | Guillaume de Lamaze      | 1B      |  1121 |               36 |
+|           34 | Olivier de Bernardi      | 2A      |  1069 |              117 |
 |           35 | Éric Edwards             | 2A      |  1045 |               12 |
 |           36 | Jean-Dominique Daragnes  | 2A      |  1026 |               16 |
-|           37 | Pierre Privat            | 2A      |  1004 |               14 |
-|           38 | Cyril Houplain           | 2A      |  1002 |                5 |
-|           39 | Hugo Houplain            | 2A      |  1001 |               12 |
+|           37 | Dimitri Girardetti       | 2A      |  1019 |               31 |
+|           38 | Pierre Privat            | 2A      |  1004 |               14 |
+|           39 | Cyril Houplain           | 2A      |  1002 |                5 |
 |           40 | Alex Duthil              | 2A      |  1001 |                5 |
 |           41 | Quentin Dionnot          | 2A      |   996 |               24 |
 |           42 | Peio Lagrolet            | 2A      |   995 |               21 |
 |           43 | Igor de Maack            | 2A      |   988 |               16 |
 |           44 | Bertrand Lebel           | 2A      |   982 |               25 |
-|           45 | Dimitri Girardetti       | 2A      |   981 |               29 |
+|           45 | Hugo Houplain            | 2A      |   978 |               14 |
 |           46 | Stéphane Vidaillet       | 2A      |   977 |               47 |
 |           47 | Axel Bonneville          | 2A      |   957 |               15 |
 |           48 | Laurent Fiat             | 2A      |   939 |               18 |
