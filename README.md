@@ -11,43 +11,43 @@ k = 30 * poids_partie
 De plus, tous les 3 mois, le PAM des joueurs est partiellement remis à niveau pour le recentré sur la série du joueur. Ceci permet entre autre de gérer les changements de série, et permet d'uniformiser le classement sur le long terme.
 
 ## Classement des joueurs
-Un classement des joueurs au 9 Décembre 2022 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
+Un classement des joueurs au 11 Décembre 2022 est disponible ci-dessous. Attention, ce système de classement ne devient fiable qu'après un nombre important de parties jouées pour chaque joueur.
 
 |   Classement | Joueur                   | Série   |   PAM |   Parties jouées |
 |-------------:|:-------------------------|:--------|------:|-----------------:|
 |            1 | Côme Saint-Pierre        | 1A      |  1471 |               44 |
-|            2 | Thibault Martre          | 1A      |  1445 |               44 |
+|            2 | Thibault Martre          | 1A      |  1469 |               46 |
 |            3 | Nicolas Ossard           | 1A      |  1444 |               19 |
-|            4 | Olivier Waltener         | 1A      |  1434 |               59 |
-|            5 | Georges Bachette-Peyrade | 1A      |  1432 |               27 |
-|            6 | Hugues Saint-Pierre      | 1A      |  1413 |               30 |
-|            7 | Ramire Nunez             | 1A      |  1410 |               34 |
-|            8 | Rayann Sachs             | 1A      |  1405 |               13 |
-|            9 | Evhan Dijoux             | 1A      |  1391 |               49 |
+|            4 | Ramire Nunez             | 1A      |  1425 |               38 |
+|            5 | Georges Bachette-Peyrade | 1A      |  1417 |               29 |
+|            6 | Rayann Sachs             | 1A      |  1413 |               16 |
+|            7 | Hugues Saint-Pierre      | 1A      |  1413 |               30 |
+|            8 | Olivier Waltener         | 1A      |  1400 |               61 |
+|            9 | Evhan Dijoux             | 1A      |  1392 |               53 |
 |           10 | Peio Mendiarat           | 1A      |  1387 |               21 |
-|           11 | Julien Jimenez           | 1A      |  1370 |               31 |
+|           11 | Julien Jimenez           | 1A      |  1369 |               33 |
 |           12 | Charles Bachette-Peyrade | 1A      |  1360 |               19 |
-|           13 | Charles Coustille        | 1A      |  1345 |               30 |
-|           14 | Alexandre Egurreguy      | 1A      |  1317 |               10 |
-|           15 | Jean-Luc Sallaberry      | 1A      |  1312 |               48 |
-|           16 | Alexandre de la Raitrie  | 1B      |  1290 |               29 |
-|           17 | Antoine Penin            | 1A      |  1287 |               28 |
+|           13 | Alexandre Egurreguy      | 1A      |  1351 |               12 |
+|           14 | Charles Coustille        | 1A      |  1345 |               30 |
+|           15 | Jean-Luc Sallaberry      | 1A      |  1312 |               52 |
+|           16 | Antoine Penin            | 1A      |  1300 |               29 |
+|           17 | Alexandre de la Raitrie  | 1B      |  1274 |               30 |
 |           18 | Thibaud Babled           | 1B      |  1257 |               52 |
 |           19 | Mathieu Leizagoyen       | 1B      |  1230 |               25 |
 |           20 | Mathieu Olhagaray        | 1B      |  1214 |                8 |
-|           21 | Thibault Leguillon       | 1B      |  1204 |               18 |
-|           22 | Loïc Harang              | 1B      |  1203 |               16 |
-|           23 | Baptiste Lagaillardie    | 1B      |  1200 |               30 |
+|           21 | Loïc Harang              | 1B      |  1203 |               16 |
+|           22 | Baptiste Lagaillardie    | 1B      |  1200 |               30 |
+|           23 | Thibault Leguillon       | 1B      |  1196 |               19 |
 |           24 | Pierre Meglin            | 1B      |  1190 |               26 |
 |           25 | Sébastien Picabea        | 1B      |  1186 |               35 |
-|           26 | Michel Lesueur           | 1B      |  1179 |               70 |
-|           27 | Emmanuel Poidevin        | 1B      |  1177 |               22 |
-|           28 | Victor Lassalle          | 1B      |  1173 |               60 |
-|           29 | Arthur Capelier-Mourguy  | 1B      |  1169 |               70 |
+|           26 | Emmanuel Poidevin        | 1B      |  1177 |               22 |
+|           27 | Victor Lassalle          | 1B      |  1173 |               60 |
+|           28 | Michel Lesueur           | 1B      |  1167 |               71 |
+|           29 | Arthur Capelier-Mourguy  | 1B      |  1156 |               71 |
 |           30 | Vincent Pasquesoone      | 1B      |  1139 |               27 |
 |           31 | Lawrence Robert          | 1B      |  1131 |               16 |
-|           32 | Clément Bonnichon        | 1B      |  1123 |               59 |
-|           33 | Guillaume de Lamaze      | 1B      |  1121 |               36 |
+|           32 | Guillaume de Lamaze      | 1B      |  1126 |               38 |
+|           33 | Clément Bonnichon        | 1B      |  1123 |               59 |
 |           34 | Olivier de Bernardi      | 2A      |  1069 |              117 |
 |           35 | Éric Edwards             | 2A      |  1045 |               12 |
 |           36 | Jean-Dominique Daragnes  | 2A      |  1026 |               16 |
